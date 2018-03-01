@@ -6,13 +6,13 @@ class TabsItem {
 
   select() {
     // should use classList
-    this.element.classList.toggle(".Tabs__item-selected");
+    this.element.classList.add("Tabs__item-selected");
   }
 
-  // deselect() {
-  //   // should use classList
-  //   this.element.classList.remove(".Tabs__item-selected");
-  // }
+  deselect() {
+   // should use classList
+    this.element.classList.remove("Tabs__item-selected");
+  }
 }
 
 class TabsLink {
@@ -35,42 +35,50 @@ class TabsLink {
 
   select() {
     // select this link
-    this.element.classList.toggle(".Tabs__link-selected");
+    this.element.classList.add("Tabs__link-selected");
 
     // select the associated tab
     this.tabsItem.select();
   }
 
-  // deselect() {
-  //   // deselect this link
-  //   this.element.classList.remove(".Tabs__link-selected");
-  //   // deselect the associated tab
-  //   this.element.deselect();
-  // }
+  deselect() {
+    // deselect this link
+    this.element.classList.remove("Tabs__link-selected");
+    // deselect the associated tab
+    this.element.deselect();
+  }
 }
 
 class Tabs {
   constructor(element) {
-    this.element = element;// attaches the dom node to the object as "this.element"
+    this.element = element; // attaches the dom node to the object as "this.element"
     this.links = element.querySelectorAll(".Tabs__link");
     this.links = Array.from(this.links).map((link) => {
       return new TabsLink(link, this);
+      console.log('tabslinks')
+
+
     });
     //this.activeLink = this.links[0];
     this.init();
-    console.log(this.element);
+    //console.log(this.element);
   }
 
   init() {
     // select the first link and tab upon ititialization
+    console.log('init')
     this.activeLink = this.links[0];
     this.activeLink.select();
   }
 
   updateActive(newActive) {
     // deselect the old active link
-    // this.activeLink.toggle();
+    //this.activeLink.deselect();
+
+    //newActive.select();
     // assign the new active link
+    console.log('updateactive')
+
     this.activeLink = newActive;
   }
 
@@ -84,12 +92,12 @@ class Tabs {
 
 let tabs = document.querySelectorAll(".Tabs");
 tabs = Array.from(tabs).map(tab => 
-  {
-    new Tabs(tab);
-    console.log(tab);
+  {new Tabs(tab);
+   // console.log(tab);
   }
 );
 
+//console.log(tabs);
 //new Tabs(tabs); 
 // console.log(tabs);
 // let tab = tabs[1];

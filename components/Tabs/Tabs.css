@@ -1,5 +1,6 @@
 .Tabs__item {
   display: none;
+  font-size: 16px;
 }
 
 .Tabs__item-selected {

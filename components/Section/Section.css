@@ -1,0 +1,22 @@
+.Sections {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.Section {
+    display: block;
+    border: solid .1em black;
+    width: 49.738%;
+}
+
+.Section__header {
+    margin-left: 20px;
+}
+
+.Section__content {
+    margin: 20px;
+}
+
+.Section--tabs {
+    width:100%;
+}

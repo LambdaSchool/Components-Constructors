@@ -1,7 +1,25 @@
+@import './Reset.css';
 @import './components/Tabs/Tabs.css';
+@import './components/Section/Section.css';
+@import './components/Box/Box.css';
 
 body {
 	box-sizing: border-box;
-	min-width: 300px;
+	max-width: 100%;
 	margin: 0;
+	font-size: 62.5%rem;
+	font-family: Arial, Helvetica, sans-serif;
 }
+
+h1 {
+ font-size: 1.6rem;	
+}
+
+h3 {
+	font-size: 1.3rem;
+}
+
+p {
+	font-size: 1rem;
+}
+

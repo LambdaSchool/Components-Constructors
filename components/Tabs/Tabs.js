@@ -71,8 +71,9 @@ class Tabs {
   }
 
   getTab(data) {
-    console.log(document.querySelectorAll(`.Tabs__item[data-tab="${data}"]`)[0]);
-    return document.querySelectorAll(`.Tabs__item[data-tab="${data}"]`)[0];
+    //console.log(document.querySelectorAll(`.Tabs__item[data-tab="${data}"]`)[0]);
+    //return document.querySelectorAll(`.Tabs__item[data-tab="${data}"]`)[0];
+    return this.element.querySelector(`.Tabs__item[data-tab = "${data}"]`);
     // console.log(`dataset ${data.dataset.tab}`);
 
     // use the tab item classname and the data attribute to select the proper tab

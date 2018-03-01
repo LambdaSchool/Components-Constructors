@@ -35,7 +35,9 @@ class TabsLink {
   };
 
   select() {
+    this.element.classList.add("Tabs__link");
     // select this link
+    this.element.classList.add("")
     // select the associated tab
   }
 

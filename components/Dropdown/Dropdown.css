@@ -1,0 +1,25 @@
+.Dropdown {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Dropdown__title{
+    border: 3px solid black;
+}
+.Dropdown__content {
+    position: absolute;
+    top: 64px;
+    border: 3px solid black;
+    width: 90px;
+    text-align: center;
+    background-color: white;
+    display: none;
+}
+
+.Dropdown--display{
+    display: inline;
+}

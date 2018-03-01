@@ -11,6 +11,10 @@
   margin: 20px 0;
 }
 
+.Tabs__item-selected {
+  display: block;
+}
+
 .Tabs__link {
   display: inline-block;
   box-sizing: border-box;
@@ -25,7 +29,9 @@
 }
 
 .Tabs__header {
-  text-align: center;
-  font-weight: bold;
+  display: flex;
+  justify-content: center;
   font-size: 40px;
+  font-weight: bold;
 }
+

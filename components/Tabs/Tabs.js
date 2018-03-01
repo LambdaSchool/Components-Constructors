@@ -7,10 +7,12 @@ class TabsItem {
 
   select() {
     // should use classList
+    this.element.style.display = 'flex';
   }
 
   deselect() {
     // should use classList
+    this.element.style.display = 'none';
   }
 }
 
@@ -21,7 +23,6 @@ class TabsLink {
     this.tabsItem = this.tabs.getTab(element.dataset.tab);// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
     // reassign this.tabsItem to be a new instance of TabsItem, passing it this.tabsItem
     this.element.addEventListener('click', () => {
-      console.log('clicked');
       this.tabs.updateActive(this);
       this.select();
     });
@@ -30,12 +31,16 @@ class TabsLink {
   select() {
     // select this link
     // select the associated tab
-    this.tabsItem.element.style.display = 'flex';
+    this.element.style.backgroundColor = 'white';
+    this.element.style.border = '1px solid black';
+    console.log(this);
   }
 
   deselect() {
     // deselect this link
     // deselect the associated tab
+    this.element.style.backgroundColor = "gray";
+    this.element.style.border = "none";
   }
 }
 
@@ -52,22 +57,30 @@ class Tabs {
 
   init() {
     // select the first link and tab upon ititialization
+    this.activeLink.tabsItem.select();
+    this.activeLink.select();
   }
 
   updateActive(newActive) {
     // deselect the old active link
     // assign the new active link
+    //this.activeLink.tabsItem.element.style.display = 'none';
+    
+    // this is how you get at the button
+    //this.activeLink.tabsItem.element.style.display = 'none';
+    this.activeLink.tabsItem.deselect();
+    this.activeLink.deselect();
+    newActive.tabsItem.select();
+    this.activeLink = this.links[newActive.element.dataset.tab - 1];
   }
 
   getTab(data) {
     // use the tab item classname and the data attribute to select the proper tab 
-    // return new TabsItem(this.element.querySelectorAll("[data-tab='1']")[1]);
     return new TabsItem(this.element.querySelectorAll(`[data-tab='${data}']`)[1]);
   }
 
 }
 
 let tabs = document.querySelectorAll(".Tabs");
-console.log(tabs);
+
 tabs = Array.from(tabs).map(tabs => new Tabs(tabs));
-console.log(tabs);

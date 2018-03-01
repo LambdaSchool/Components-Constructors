@@ -45,7 +45,9 @@
 .clickedList {
   position: absolute;
   background-color: white;
-  top: 100px;
+  top: 90px;
+  left:12px;
+  width:136px;
   border: 1px solid black;
   padding: 20px;
 }

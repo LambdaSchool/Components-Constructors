@@ -13,10 +13,4 @@
     margin-top: 20px;
 }
 
-.Box--dropdown {
-    flex-flow: column;
-    justify-content: space-around;
-    border: solid 2px black;
-    height: 100px;
-    display: none;
-}
+

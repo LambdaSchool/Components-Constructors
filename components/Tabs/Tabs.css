@@ -39,3 +39,7 @@
   flex: center;
   order: 2;
 }
+
+.show {
+  display: block;
+}

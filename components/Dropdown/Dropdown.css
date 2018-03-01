@@ -1,0 +1,30 @@
+.Dropdown {  
+    display: flex;
+    flex-flow: column;
+    margin-top: 5px;
+}
+.Dropdown__text {
+    border: black solid 5px;
+    padding: 5px;
+}
+.Dropdown__text:hover {
+    background-color: beige;
+} 
+
+.Dropdown__link--gutter {
+    padding: 3px 15px;
+    margin-bottom: 8px;
+}
+
+.Dropdown__menu {
+    border: 3px solid black;
+    background-color: beige;
+    position: fixed;
+    display: flex;
+    flex-flow: column;
+    margin-top: 5px;
+}
+
+#Dropdown__hide {
+    display: none;
+}

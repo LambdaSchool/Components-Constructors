@@ -1,3 +1,7 @@
+.Tabs h1 {
+  margin-left: 44%;
+}
+
 .Tabs__item {
   display: none;
 }
@@ -15,7 +19,7 @@
   display: inline-block;
   box-sizing: border-box;
   padding: 10px 15px;
-  margin: 10px 10px 10px 0;
+  margin: 10px 10px 10px 10px;
   background-color: gray;
 }
 

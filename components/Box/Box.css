@@ -1,0 +1,11 @@
+.Box__header {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.Box__content {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}

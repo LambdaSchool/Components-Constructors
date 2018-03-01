@@ -2,6 +2,7 @@
 class TabsItem {
   constructor(element) {
     // attach dom element to object. Example in Tabs class
+    
   }
 
   select() {
@@ -49,6 +50,7 @@ class Tabs {
 
   init() {
     // select the first link and tab upon ititialization
+    this.activeLink.classList.add("Tabs__item-selected")
   }
 
   updateActive(newActive) {

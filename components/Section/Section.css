@@ -1,0 +1,22 @@
+.Section {
+    display: flex;
+    border: black solid 5px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.Section__box {
+
+}
+
+.Section__nav {
+    width: 60%;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+.Section__nav--title  {
+    font-size: 55px;
+    margin-right: 10%;;
+}

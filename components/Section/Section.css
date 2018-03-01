@@ -1,0 +1,43 @@
+
+.header{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.Sections {
+	display: inline-block;
+	clear: both;
+	width: 50%;
+	margin: 0;
+	padding: 2px;
+	
+}
+.Section {
+    display: inline-block;
+	clear: both;
+	width: 100%;
+	margin: 0;
+	padding: 2px;
+	
+    border: solid 2px black;
+}
+.Section--bordered {
+	border: 2.5px solid black;
+	border-top: none;
+}
+
+.Section__header {
+    text-align: center;
+    margin-left: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.Section__content {
+    margin: 20px;
+}
+
+.Section--tabs {
+    width:100%;
+}

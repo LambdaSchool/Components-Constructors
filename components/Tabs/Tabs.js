@@ -1,15 +1,20 @@
 
 class TabsItem {
   constructor(element) {
-    // attach dom element to object. Example in Tabs class
+    this.element = element;
+    this.element = element.querySelectorAll("Block__title");
+    this.element = element.querySelectorAll("Block__description");
+    // attach dom element to object. Example in Tabs class  
   }
 
   select() {
-    // should use classList
+    this.element.classList.add("Block__title");
+    this.element.classList.add("Block__description");
   }
 
   deselect() {
-    // should use classList
+    this.element.classList.remove("Block__title");
+    this.element.classList.remove("Block__description");
   }
 }
 
@@ -57,6 +62,7 @@ class Tabs {
   }
 
   getTab(data) {
+
     // use the tab item classname and the data attribute to select the proper tab
   }
 

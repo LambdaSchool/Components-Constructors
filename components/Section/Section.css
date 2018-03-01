@@ -1,0 +1,32 @@
+.Section {
+	display: flex;
+	text-align: center;
+	border: 1px solid black;
+	width: 100%;
+}
+
+.Section__header {
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	margin-right: 130px;
+	margin-top: 30px;
+	font-size: 30px;
+	/* display: inline-block; */
+}
+
+
+.Section--half {
+	width: 49%;
+	display: inline-block;
+	text-align: left;
+	border: 2px solid black;
+}
+
+.Section--block {
+	display: block;
+} 
+
+.Section__header--block {
+	display: block;
+}

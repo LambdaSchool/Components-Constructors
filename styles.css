@@ -1,3 +1,5 @@
+@import './components/Section/Section.css';
+@import './components/Box/Box.css';
 @import './components/Tabs/Tabs.css';
 
 body {
@@ -5,3 +7,55 @@ body {
 	min-width: 300px;
 	margin: 0;
 }
+
+.Dropdown__button {
+	background-color: white;
+	color: black;
+	padding: 16px;
+	font-size: 16px;
+	border-color:black;
+	margin-top:20px;
+	margin-left:18px;
+	margin-bottom:12px;
+	cursor: pointer;
+	border: 2.5px solid black;
+ }
+ 
+ .Dropdown {
+	display: inline-block;
+ }
+ 
+ .Dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1; 
+	background-color: white;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+ }
+ 
+ .Dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: underline;
+	display: block;
+	color: purple;
+ }
+ 
+ .show {display:block;}
+ 
+ .Tabs {
+	display: block;
+	margin-right: 950px; 
+ }
+
+
+@media (max-width: 400px) {
+
+	.Section--half {
+		width: 98%;
+	}
+}  
+

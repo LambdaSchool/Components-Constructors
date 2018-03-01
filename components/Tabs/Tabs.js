@@ -2,22 +2,29 @@
 class TabsItem {
   constructor(element) {
     // attach dom element to object. Example in Tabs class
+    this.element = element;
+    this.element = element.querySelectorAll(".Box__title");
+    this.element = element.querySelectorAll(".Box__description");
   }
 
   select() {
     // should use classList
+    this.title.classList.add("Box__title");
+    this.desc.classList.add("Box__description");
   }
 
   deselect() {
     // should use classList
+    this.title.classList.remove("Box__title");
+    this.desc.classList.remove("Box__description");
   }
 }
 
 class TabsLink {
   constructor(element, parent) {
-    this.element;// attach dom element to object
-    this.tabs;// attach parent to object
-    this.tabsItem;// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
+    this.element = element;// attach dom element to object
+    this.tabs = parent;// attach parent to object
+    this.tabsItem =  parent.getTab(element.getAttribute("data-tab"));// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
     // reassign this.tabsItem to be a new instance of TabsItem, passing it this.tabsItem
     this.element.addEventListener('click', () => {
       this.tabs.updateActive(this);

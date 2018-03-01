@@ -1,7 +1,13 @@
 @import './components/Tabs/Tabs.css';
+@import './components/Section/Section.css';
+@import './components/Box/Box.css';
 
+* {
+	box-sizing: border-box;
+	}
 body {
 	box-sizing: border-box;
 	min-width: 300px;
 	margin: 0;
+	font-size: 62.5%;
 }

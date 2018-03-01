@@ -20,9 +20,8 @@ class TabsLink {
   constructor(element, parent) {
     this.element = element;// attach dom element to object GOOD_
     this.tabs = parent;// attach parent to object GOOD_
-    this.tabsItem =this.tabs.getTab(this.element.dataset.tab);// assign this to the associated tab using the parent's "getTab" method by passing it the correct data NOT RIGHT https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement
-    this.tabsItem = new TabsItem(this.tabsItem);
-    // reassign this.tabsItem to be a new instance of TabsItem class, passing it this.tabsItem
+    this.tabsItem =this.tabs.getTab(this.element.dataset.tab);// assign this to the associated tab using the parent's "getTab" method by passing it the correct data GOOD https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement
+    this.tabsItem = new TabsItem(this.tabsItem); // reassign this.tabsItem to be a new instance of TabsItem class, passing it this.tabsItem
     this.element.addEventListener('click', () => {
       this.tabs.updateActive(this);
       this.select();
@@ -32,13 +31,13 @@ class TabsLink {
   select() {
     // select this link
     // select the associated tab
-
-
+    element.classList.add('Tabs__link-selected'); // ????
   }
 
   deselect() {
     // deselect this link
     // deselect the associated tab
+    element.classList.remove('Tabs__link-selected'); // ????
   }
 }
 

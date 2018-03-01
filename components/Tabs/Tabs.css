@@ -15,11 +15,27 @@
   display: inline-block;
   box-sizing: border-box;
   padding: 10px 15px;
-  margin: 10px 10px 10px 0;
+  margin: 60px 10px 10px 30px;
   background-color: gray;
 }
 
 .Tabs__link-selected {
   background-color: white;
   border: solid 1px gray;
+}
+
+.Tabs { 
+  border-style: solid;
+  border-color: black;
+  width: 100%;
+  height: 300px;
+  display: flex; 
+}
+
+.tabHead {
+  font-size: 48px;
+  font-weight: bold;
+  margin-left: 28%;
+  flex: center;
+  order: 2;
 }

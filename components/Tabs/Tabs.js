@@ -20,8 +20,8 @@ class TabsLink {
   constructor(element, parent) {
     this.element = element;// attach dom element to object
     this.tabs = parent;// attach parent to object
-    this.tabsItem = parent.getTab(element)// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
-    console.log(`tabsItem ${tabsItem}`)
+    this.tabsItem = parent.getTab(element);// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
+    console.log(`tabsItem ${tabsItem}`);
     this.tabsItem = new TabsItem(this.tabsItem);// reassign this.tabsItem to be a new instance of TabsItem, passing it this.tabsItem
     this.element.addEventListener('click', () => {
       this.tabs.updateActive(this);

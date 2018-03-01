@@ -11,6 +11,10 @@
   margin: 20px 0;
 }
 
+.Tabs__item-selected {
+  display: block;
+}
+
 .Tabs__link {
   display: inline-block;
   box-sizing: border-box;
@@ -23,3 +27,11 @@
   background-color: white;
   border: solid 1px gray;
 }
+
+.Tabs__header {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+

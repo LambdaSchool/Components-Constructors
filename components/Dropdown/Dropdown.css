@@ -1,15 +1,15 @@
 .Dropdown {
-    position: fixed;
     left: 20px;
     top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	align-self:center;
 }
+
 .Dropdown__title{
     border: 3px solid black;
 }
+
 .Dropdown__content {
     position: absolute;
     top: 64px;

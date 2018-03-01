@@ -25,6 +25,6 @@
 @media (min-width: 600px) {
     .Section--half {
         display: inline-block;
-        width: 49%;
+        width: 50%;
     }
 }

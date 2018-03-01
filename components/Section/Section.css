@@ -1,0 +1,31 @@
+.Section-Header{
+	display:flex;
+    height: 100px;
+    font-size: 20px;
+    border: 3px solid black;
+    text-align: center;
+	justify-content: space-around;
+}
+
+.container {
+	display:flex;
+	width: 100%;
+	margin:auto;
+}
+
+.Section__header {
+	flex:2;
+	margin-right:75px;
+}
+
+.Section__content {
+    font-size: 16px;
+}
+@media (max-width: 600px) {
+   .container{
+       display: flex;
+	   width:100%;
+	   margin: auto;
+       flex-direction: column;
+   }
+}

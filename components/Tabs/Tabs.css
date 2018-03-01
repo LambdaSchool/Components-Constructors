@@ -1,3 +1,15 @@
+.Tabs {
+  border: 2px solid red;
+  width: 100%;
+  padding: 20px;
+}
+
+.Tabs__header {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .Tabs__item {
   display: none;
 }

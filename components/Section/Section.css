@@ -1,0 +1,36 @@
+.Section {
+    border: 1px solid black;
+    display: flex;
+}
+
+.Section__header {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.Dropdown {
+    border: 2px solid black;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+.Dropdown__list {
+    height: 75px;
+    z-index: 5;
+}
+
+.Dropdown--hidden {
+    display: none;
+}
+
+.Section__header-content {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 38%;
+}
+
+.Section__content {
+    padding: 20px;
+}

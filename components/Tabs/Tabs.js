@@ -44,8 +44,9 @@ class TabsLink {
   deselect() {
     // deselect this link
     this.element.classList.remove("Tabs__link-selected");
+    
     // deselect the associated tab
-    this.element.deselect();
+    this.tabsItem.deselect();
   }
 }
 
@@ -73,7 +74,7 @@ class Tabs {
 
   updateActive(newActive) {
     // deselect the old active link
-    //this.activeLink.deselect();
+    this.activeLink.deselect();
 
     //newActive.select();
     // assign the new active link

@@ -1,0 +1,25 @@
+.Section {
+    box-sizing: border-box;
+    display: inline-block;
+    clear: both;
+    width: 99.9%;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+.Section__header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+.Section--bordered  {
+    border:  4px solid black;
+}
+
+@media (min-width: 400px) {
+    .Section--split {
+        display: inline-block;
+        width: 50%;
+        margin: 0px -6px 0 0;
+    }
+}

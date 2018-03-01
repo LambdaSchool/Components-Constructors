@@ -1,10 +1,12 @@
 
 class TabsItem {
   constructor(element) {
+    this.element = element;
     // attach dom element to object. Example in Tabs class
   }
 
   select() {
+    
     // should use classList
   }
 

@@ -20,7 +20,7 @@ class TabsLink {
   constructor(element, parent) {
     this.element = element;
     this.tabs = parent;
-    this.tabsItem  = parent.getTab(element.getAttribute("data-tab"));// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
+    this.tabsItem = parent.getTab(element.getAttribute("data-tab"));// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
     this.tabsItem = new TabsItem(this.tabsItem);// reassign this.tabsItem to be a new instance of TabsItem, passing it this.tabsItem
     this.element.addEventListener('click', () => {
       this.tabs.updateActive(this);
@@ -61,7 +61,7 @@ class Tabs {
   updateActive(newActive) {
     this.activeLink.deselect();
     this.activeLink.tabsItem.deselect();
-    this.activelink = newActive;
+    this.activeLink = newActive;
     this.activeLink.select();
     this.activeLink.tabsItem.select();
     // deselect the old active link

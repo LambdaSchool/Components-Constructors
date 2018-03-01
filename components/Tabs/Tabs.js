@@ -1,28 +1,28 @@
 
-class TabsItem {
+class TabsItem { // right track with extends, or no???
   constructor(element) {
-    // attach dom element to object. Example in Tabs class
+    // attach dom element to object. Example in Tabs class GOOD_
     this.element = element;
-  } // GOOD
+  } 
 
   select() {
-    // should use classList (element).classList.add(.Tab__items--selected);
-    element.classList.add('Tabs__item--selected'); 
+    // should use classList GOOD_
+    element.classList.add('Tabs__item-selected'); 
   }
 
-  // Do we want to add class Tabs__item, or remove the selected class?
-  deselect() {
-    // should use classList
-    element.classList.remove('Tabs__item--selected');
+ deselect() {
+    // GOOD_
+    element.classList.remove('Tabs__item-selected');
   }
 }
 
-class TabsLink {
+class TabsLink {  
   constructor(element, parent) {
-    this.element = element;// attach dom element to object
-    this.tabs = parent;// attach parent to object
-    this.tabsItem = ;// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
-    // reassign this.tabsItem to be a new instance of TabsItem, passing it this.tabsItem
+    this.element = element;// attach dom element to object GOOD_
+    this.tabs = parent;// attach parent to object GOOD_
+    this.tabsItem =this.tabs.getTab(this.element.dataset.tab);// assign this to the associated tab using the parent's "getTab" method by passing it the correct data NOT RIGHT https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement
+    this.tabsItem = new TabsItem(this.tabsItem);
+    // reassign this.tabsItem to be a new instance of TabsItem class, passing it this.tabsItem
     this.element.addEventListener('click', () => {
       this.tabs.updateActive(this);
       this.select();
@@ -32,6 +32,8 @@ class TabsLink {
   select() {
     // select this link
     // select the associated tab
+
+
   }
 
   deselect() {
@@ -42,7 +44,7 @@ class TabsLink {
 
 class Tabs {
   constructor(element) {
-    this.element = element;// attaches the dom node to the object as "this.element"
+    this.element = element;// attaches the dom node to the object as "this.element" GOOD
     this.links = element.querySelectorAll(".Tabs__link");
     this.links = Array.from(this.links).map((link) => {
       return new TabsLink(link, this);
@@ -52,7 +54,7 @@ class Tabs {
   }
 
   init() {
-    // select the first link and tab upon ititialization
+    // select the first link and tab upon initialization
   }
 
   updateActive(newActive) {
@@ -62,7 +64,9 @@ class Tabs {
 
   getTab(data) {
     // use the tab item classname and the data attribute to select the proper tab
-    const tabsItem = document.querySelector('.tabs__item');
+    const tabsItem = document.querySelector('.Tabs__item');
+    /// check out method usage HTMLElement.dataset
+
   }
 
 }

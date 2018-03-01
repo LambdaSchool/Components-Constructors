@@ -28,3 +28,20 @@
   border: solid 1px gray;
 }
 
+.Box {
+  margin-left: 20px;
+}
+
+.Box__title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.Box__description {
+  margin-bottom: 15px;
+}
+
+.Tabs_links {
+  margin-left: 10px;
+} 

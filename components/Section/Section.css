@@ -1,0 +1,66 @@
+
+
+.Section {
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+  border: 2px solid black;
+}
+
+.Section__top {
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+ padding:10px;
+}
+
+.Dropdown {
+  border: 2px solid black;
+  font-size: 1.2rem;
+  padding: 15px 25px;
+}
+
+.Dropdown__items {
+  display: none;
+}
+
+.Section__header, .Tab__header {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  align-self: center;
+}
+
+.Section__invisible {
+  width:105.33px;
+  opacity:0;
+}
+
+.Section__middle {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.clickedList {
+  position: absolute;
+  background-color: white;
+  top: 90px;
+  left:12px;
+  width:136px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+  
+}
+
+li a {
+  text-decoration: none;
+  margin-left: -30px;
+  
+}
+
+ 

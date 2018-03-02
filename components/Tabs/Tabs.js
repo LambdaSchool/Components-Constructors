@@ -33,14 +33,16 @@ class TabsLink {
 
   select() {
     // select this link
-    //TBDthis.element.classList.add('Tabs__link--selected');
+    this.element.classList.add('Tabs__link--selected');
     // select the associated tab
+    this.element.tabsItem.select();
   }
 
   deselect() {
     // deselect this link
-    //TBDthis.element.classList.remove('Tabs__link--selected');
+    this.element.classList.remove('Tabs__link--selected');
     // deselect the associated tab
+    this.element.tabsItem.deselect();
   }
 }
 
@@ -61,8 +63,9 @@ class Tabs {
 
   updateActive(newActive) {
     // deselect the old active link
+    this.activeLink.deselect();
     // assign the new active link
-    console.log(newActive.tabs.activeLink)
+    this.activeLink = newActive;
   }
 
   getTab(data) {

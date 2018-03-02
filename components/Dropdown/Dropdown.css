@@ -1,0 +1,36 @@
+.Dropdown__button{
+	justify-content: flex-start;
+	text-align: center;
+	vertical-align: middle;
+    margin: 15px;
+    display: inline-block;
+    width: 85px;
+    height: 30px;
+	background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+	cursor: pointer;
+	border: 3px solid black;
+}
+
+.Dropdown__content{
+    display: none;
+}
+
+.Dropdown__link {
+	background-color: white;
+    color: black;
+    border: 1px solid black;
+    width: 110px;
+    text-decoration: none;
+    display: block;
+    margin-left: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.show{
+	display: block;
+}

@@ -1,0 +1,28 @@
+.Section{
+    border-style: solid;
+}
+
+.Section--full{
+	display: flex;
+	width: 100%;
+	height: auto;
+}
+
+.Section--half{
+    display: inline-block;
+	width: 49%;
+}
+.Section__header{
+	justify-content: center;
+	margin-bottom: auto;
+	margin-top: auto;
+	margin-left: 37%;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+@media(max-width: 800px){
+	.Section--half{
+		width: 100%;
+	}	
+}

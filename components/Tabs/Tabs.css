@@ -11,11 +11,24 @@
   margin: 20px 0;
 }
 
+.Tabs__header {
+	justify-content: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 37%;
+	font-size: 40px;
+  font-weight: bold;
+}
+
+.Tabs--bordered {
+  border: 2px solid black;
+}
+
 .Tabs__link {
   display: inline-block;
   box-sizing: border-box;
   padding: 10px 15px;
-  margin: 10px 10px 10px 0;
+  margin: 10px 10px 10px 20px;
   background-color: gray;
 }
 

@@ -1,0 +1,38 @@
+.Dropdown {
+  display: inline-block;
+  margin: 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+.Dropdown__button {
+  padding: 10px;
+  background-color: lightseagreen;
+  border: 2.5px solid black;
+}
+
+.Dropdown__content {
+  position: absolute;
+  background-color: white;
+  display: none;
+  margin-top: 10px;
+  padding: 15px;
+  border: 2.5px solid black;
+}
+
+.Dropdown__link {
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.Dropdown--event .Dropdown__content {
+  padding: 0 23px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Dropdown--event .Dropdown__content a {
+  color: grey;
+}

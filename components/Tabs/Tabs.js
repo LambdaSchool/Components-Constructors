@@ -8,7 +8,7 @@ class TabsItem {
 
   select() {
     // should use classList
-    this.element.classList.add("Tabs__item-selected")  
+    this.element.classList.add("Tabs__item-selected")
   }
 
   deselect() {
@@ -33,14 +33,15 @@ class TabsLink {
     // select this link
     this.element.classList.add("Tabs__link-selected")
     // select the associated tab
-    
-    
+    this.tabsItem.select();
+
   }
 
   deselect() {
     // deselect this link
     this.element.classList.remove("Tabs__link-selected");
     // deselect the associated tab
+    this.tabsItem.deselect();
   }
 }
 
@@ -65,10 +66,8 @@ class Tabs {
     // deselect the old active link
     // assign the new active link
     this.activeLink.deselect();
-    this.activeLink.tabsItem.deselect();
     this.activeLink = newActive;
     this.activeLink.select();
-    this.activeLink.tabsItem.select();
   }
 
   getTab(data) {

@@ -3,7 +3,6 @@ class TabsItem {
   constructor(element) {
     // attach dom element to object. Example in Tabs class
     this.element = element;
-
   }
 
   select() {
@@ -57,8 +56,8 @@ class Tabs {
 
   updateActive(newActive) {
     // deselect the old active link
-    // assign the new active link
     this.activeLink.deselect();
+    // assign the new active link
     this.activeLink = newActive;
     this.activeLink.select();
   }

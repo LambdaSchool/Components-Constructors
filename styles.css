@@ -1,4 +1,7 @@
 @import './components/Tabs/Tabs.css';
+@import './components/Section/Section.css';
+@import './components/Box/Box.css';
+
 
 body {
 	box-sizing: border-box;

@@ -24,3 +24,6 @@ You may need to adjust some of the naming for the usuage of `Box` in the HTML pr
   BEM: http://getbem.com/naming/
   
   Constructors (and factory function): https://medium.com/javascript-scene/javascript-factory-functions-vs-constructor-functions-vs-classes-2f22ceddf33e
+
+## Stretch Problem
+Remove the need for Tabs to be passed into Tabs__link instances. Tabs__link instances should also be unaware of their associated Tabs__item and should not have controll of them. All storage and selectioning of Tabs__link and Tabs__item instances should be done in Tabs.

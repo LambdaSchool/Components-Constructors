@@ -9,6 +9,9 @@
     font-size: 16px;
 }
 
+.Dropdown__header:hover {
+    cursor: pointer;
+}
 
 .Section__header h1 {
     font-size: 2rem;

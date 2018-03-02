@@ -17,6 +17,9 @@ class TabsItem {
   }
 }
 
+
+/*
+
 class TabsLink {
   constructor(element, parent) {
     this.element = element;// attach dom element to object
@@ -72,6 +75,67 @@ class Tabs {
     return this.element.querySelector(`.Tabs__Item[data-tab="${data}"]`);
   }
 
+}
+*/
+
+class TabsLink {
+  constructor(element) {
+    // attach dom element to object. Example in Tabs class
+    this.element = element;
+  }
+
+  select() {
+    // should use classList
+    this.element.classList.add('Tabs__link--selected');
+    
+  }
+
+  deselect() {
+    // should use classList
+    this.element.classList.remove('Tabs__link--selected');
+  }
+}
+class Tabs {
+  constructor(element){
+    this.index = 0;
+    this.element = element;// attaches the dom node to the object as "this.element"
+    
+    this.Tabs_links = Array.from(element.querySelectorAll(".Tabs__link")).map((Tabs_link, index) => {
+      Tabs_link.addEventListener('click', () => {
+        this.index = index;
+        this.deselectActive();
+        this.updateActive();
+        this.selectActive()
+      });
+      return new TabsLink (Tabs_link);
+    });
+    
+    this.Tabs_Items = Array.from(element.querySelectorAll(".Tabs__Item")).map(Tabs_Item => new TabsItem(Tabs_Item));
+
+    this.updateActive();
+    this.init();
+  }
+  init() {
+    // make the init selected
+    this.selectActive();
+  }
+
+  deselectActive() {
+    // deselect both link and item
+    this.activeLink.deselect();
+    this.activeItem.deselect();
+  }
+
+  updateActive() {
+    this.activeLink = this.Tabs_links[this.index];
+    this.activeItem = this.Tabs_Items[this.index];
+  }
+
+  selectActive() {
+    // select the item and link
+    this.activeLink.select();
+    this.activeItem.select();
+  }
 }
 
 let tabs = document.querySelectorAll(".Section__Tabs");

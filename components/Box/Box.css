@@ -1,0 +1,19 @@
+.Box {
+	width: 100%;
+	/* font-weight: bold; */
+}
+ .Box__description {
+	text-align: left;
+	padding: 10px 15px;
+	width: 95%;
+	display: flex;
+	font-weight: normal;
+}
+
+.Box__header {
+	font-weight: bold;
+	padding: 15px 15px;
+	text-align: left;
+	font-size: 20px;
+	
+}

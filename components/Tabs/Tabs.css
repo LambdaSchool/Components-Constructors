@@ -1,3 +1,8 @@
+.Tabs {
+	display: block;
+	margin-right: 950px; 
+ }
+
 .Tabs__item {
   display: none;
 }

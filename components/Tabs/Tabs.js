@@ -7,13 +7,13 @@ class TabsItem {
 
   select() {
     // should use classList
-    this.element.classList.add('Item--selected');
+    this.element.classList.add('Tabs__Item--selected');
     
   }
 
   deselect() {
     // should use classList
-    this.element.classList.remove('Item--selected');
+    this.element.classList.remove('Tabs__Item--selected');
   }
 }
 
@@ -33,11 +33,13 @@ class TabsLink {
 
   select() {
     // select this link
+    //TBDthis.element.classList.add('Tabs__link--selected');
     // select the associated tab
   }
 
   deselect() {
     // deselect this link
+    //TBDthis.element.classList.remove('Tabs__link--selected');
     // deselect the associated tab
   }
 }

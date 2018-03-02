@@ -1,8 +1,11 @@
-.Tabs__item {
+.Section--tab {
+  width: 100%;
+}
+.Tabs__Item {
   display: none;
 }
 
-.Tabs__item-selected {
+.Tabs__Item--selected {
   display: block;
 }
 
@@ -19,7 +22,7 @@
   background-color: gray;
 }
 
-.Tabs__link-selected {
+.Tabs__link--selected {
   background-color: white;
   border: solid 1px gray;
 }

@@ -1,22 +1,71 @@
 .Tabs__item {
   display: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .Tabs__item-selected {
-  display: block;
+  display: inline-block;
+  width: 50%;
+  margin: 120px 10px 10px 10px;
+  flex-direction: left;
+  position: relative;
+  background-color: transparent;
 }
 
-.Tabs__links {
+.Tabs__item.Tabs__item-selected {
+  width: 0px;
+  
+}
+
+.Tabs__link.Tabs__item-selected {
+  background-color: transparent;
+  border: solid;
+  border-color: black;
+  width: 15%;
+  height: 20%;
+  
+}
+
+.Block {
+  display: inline-block;
+  position:absolute;
+  margin: -15px -750px;
+  overflow: hidden;
+  width: 500px;
+  margin-top: 5px;
+
+
+}
+
+.Block__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Block__description {
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.Tabs_links {
+  display: flex;
   left: 0;
-  margin: 20px 0;
+  margin: 0px 0;
+  width: 40%;
+  flex-direction: row;
 }
 
 .Tabs__link {
-  display: inline-block;
+  display: flex; 
   box-sizing: border-box;
   padding: 10px 15px;
-  margin: 60px 10px 10px 30px;
+  margin: 50px 10px 10px 30px;
   background-color: gray;
+  width: 15%;
+  height: 20%;
 }
 
 .Tabs__link-selected {
@@ -28,18 +77,16 @@
   border-style: solid;
   border-color: black;
   width: 100%;
-  height: 300px;
+  height: 315px;
   display: flex; 
 }
 
 .tabHead {
   font-size: 48px;
   font-weight: bold;
-  margin-left: 28%;
-  flex: center;
   order: 2;
+  margin: 5.5%;
+  margin-top: 0%;
+  position: static;
 }
 
-.show {
-  display: block;
-}

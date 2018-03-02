@@ -34,7 +34,6 @@ class TabsLink {
     this.element.classList.add("Tabs__link-selected")
     // select the associated tab
     this.tabsItem.select();
-
   }
 
   deselect() {
@@ -53,13 +52,7 @@ class Tabs {
       return new TabsLink(link, this);
     });
     this.activeLink = this.links[0];
-    this.init();
-  }
-
-  init() {
-    // select the first link and tab upon ititialization
     this.activeLink.select();
-    this.activeLink.tabsItem.select();
   }
 
   updateActive(newActive) {

@@ -23,8 +23,7 @@ class TabsLink {
     this.tabs = parent;// attach parent to object
     this.tabsItem = parent.getTab(this.element.dataset.tab); // assign this to the associated tab using the parent's "getTab" method by passing it the correct data
     
-    this.tabsItem = new TabsItem(element)// reassign this.tabsItem to be a new instance of TabsItem, passing it this.tabsItem
-    
+    this.tabsItem = new TabsItem(this.tabsItem)// reassign this.tabsItem to be a new instance of TabsItem, passing it this.tabsItem
     this.element.addEventListener('click', () => {
       this.tabs.updateActive(this);
       this.select();
@@ -35,14 +34,14 @@ class TabsLink {
     // select this link
     this.element.classList.add('Tabs__link--selected');
     // select the associated tab
-    this.element.tabsItem.select();
+    this.tabsItem.select();
   }
 
   deselect() {
     // deselect this link
     this.element.classList.remove('Tabs__link--selected');
     // deselect the associated tab
-    this.element.tabsItem.deselect();
+    this.tabsItem.deselect();
   }
 }
 

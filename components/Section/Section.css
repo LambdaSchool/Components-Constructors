@@ -1,0 +1,43 @@
+
+.Section{
+    border: 3px solid black;
+    display: block;
+}
+
+.Section h1 {
+    text-align: center;
+}
+
+.Section .Dropdown {
+    border: 2px solid black;
+    display: inline-block;
+    font-size: 20px;
+    text-justify: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.Dropdown__menu {
+    display: none;
+}
+
+.Dropdown__menu--clicked {
+    display: flex;
+    flex-direction: column;
+}
+
+.Content {
+    display:flex;
+    flex-flow: row nowrap;
+    text-align: left;
+}
+
+
+@media (max-width: 600px){
+    .Content {
+        flex-flow: column nowrap;
+    }
+    .Box {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,38 @@
+.Section {
+  /* display: flex; */
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+
+.Section__header {
+  text-align: center;
+  margin-top: 10px;
+  width: 82%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.ourSection {
+  display: flex;
+  width: 98%;
+}
+
+.Section--styles {
+  margin: 0px 5px 0px 5px;
+  width: 100%;
+}
+.Section--border {
+  border: 2px solid black;
+}
+
+@media (max-width: 550px) {
+  .Section {
+    width: 100%;
+    background: lightcoral;
+    flex-direction: column;
+  }
+  .ourSection {
+    width: 82%;
+  }
+}

@@ -1,3 +1,4 @@
+/* ************* GRANDCHILD *************** */
 
 class TabsItem {
   constructor(element) {
@@ -15,6 +16,8 @@ class TabsItem {
     this.element.classList.remove('Tabs__item--selected');
   }
 }
+
+/* *************CHILD ******************** */
 
 class TabsLink {
   constructor(element, parent) {
@@ -47,7 +50,7 @@ class TabsLink {
     this.element.classList.remove("Tabs__link--selected");
   }
 }
-
+ /* <<<<<<<<<<<<<<<<<<<PARENT>>>>>>>>>>>>*/
 class Tabs {
   constructor(element) {
     this.element = element;// attaches the dom node to the object as "this.element"
@@ -56,27 +59,31 @@ class Tabs {
       return new TabsLink(link, this);
     });
     this.activeLink = this.links[0];
-    this.init();
-  }
-
-  init() {
-    // select the first link and tab upon ititialization
     this.activeLink.select();
+    // this.init();
+
   }
 
+  // init() {
+  //   // select the first link and tab upon ititialization
+  //   this.activeLink.select();
+  // }
+  
   updateActive(newActive) {
     // deselect the old active link
     this.activeLink.deselect();
     // assign the new active link
     this.activeLink = newActive;
+    console.log(this.newActive);
   }
 
   getTab(data) {
     // use the tab item classname and the data attribute to select the proper tab
-    return this.element.querySelector(`.Tabs__item[data-t="${data}"]`)
+    return this.element.querySelector(`.Tabs__item[data-tab="${data}"]`)
   }
 
 }
 
 let tabs = document.querySelectorAll(".Tabs");
+console.log(tabs)
 tabs = Array.from(tabs).map(tabs => new Tabs(tabs));

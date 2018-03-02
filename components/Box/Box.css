@@ -1,0 +1,29 @@
+.Box {
+  display: flex;
+  width: 100%;
+}
+
+.Box--border-sides {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.Box .Box--content {
+  /* padding: 5px; */
+  width: 100%;
+}
+
+.Box .Box__description-content {
+  padding: 5px;
+}
+
+@media (max-width: 550px) {
+  .Box {
+    flex-direction: column;
+    width: 99%;
+    background: lightgoldenrodyellow;
+  }
+  .Box .Box--content {
+    width: 100%;
+  }
+}

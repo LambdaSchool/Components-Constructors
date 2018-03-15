@@ -14,25 +14,16 @@ class TabsItem {
 }
 
 class TabsLink {
-  constructor(element, parent) {
+  constructor(element) {
     this.element = element;
-    this.tabs = parent;
-    this.tabsItem = this.tabs.getTab(this.element.dataset.tab);
-    this.tabsItem = new TabsItem(this.tabsItem);
-    this.element.addEventListener('click', () => {
-      this.tabs.updateActive(this);
-      this.select();
-    });
   };
 
   select() {
     this.element.classList.add("Tabs__link-selected")
-    this.tabsItem.select();
   }
 
   deselect() {
     this.element.classList.remove("Tabs__link-selected");
-    this.tabsItem.deselect();
   }
 }
 
@@ -41,19 +32,44 @@ class Tabs {
     this.element = element;
     this.links = element.querySelectorAll(".Tabs__link");
     this.links = Array.from(this.links).map((link) => {
-      return new TabsLink(link, this);
+      return new TabsLink(link);
+    });
+    this.tabs = element.querySelectorAll(".Tabs__item")
+    this.tabs = Array.from(this.tabs).map((tab) => {
+      return new TabsItem(tab);
     });
     this.activeLink = this.links[0];
+    this.activeTab = this.tabs[0];
     this.init();
+    this.toggleTab();
   }
 
   init() {
     this.activeLink.select();
+    this.activeTab.select();
   }
 
-  updateActive(newActive) {
+  toggleTab() {
+    this.links.forEach((link) => {
+      link.element.addEventListener('click', (e) => {
+        this.updateActiveLink(link);
+        let tab = this.getTab(link.element.dataset.tab);
+        tab = new TabsItem(tab);
+        this.updateActiveTab(tab);
+      });
+    });
+  };
+
+  updateActiveLink(newActive) {
     this.activeLink.deselect();
     this.activeLink = newActive;
+    this.activeLink.select();
+  }
+
+  updateActiveTab(newActive) {
+    this.activeTab.deselect();
+    this.activeTab = newActive;
+    this.activeTab.select();
   }
 
   getTab(data) {

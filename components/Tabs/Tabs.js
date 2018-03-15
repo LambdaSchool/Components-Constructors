@@ -30,8 +30,8 @@ class TabsLink {
   };
 
   select() {
-    this.element = element.querySelector('.Tabs__link-selected')
-    this.tabs = element.querySelector()
+    this.element = document.querySelector('.Tabs__link-selected')
+    this.tabs = document.querySelector('.Tabs__link-selected')
     // select this link
     // select the associated tab
   }

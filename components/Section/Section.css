@@ -1,0 +1,31 @@
+.Section {
+    display: inline-block;
+    border: 3px solid black;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.Section__header {
+    text-align: center;
+}
+
+
+.Section__header {
+    font-weight: bold;
+    margin-left: 30%;
+    align-items: center;
+    font-size: 50px;
+}
+
+.Section--split {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+@media (max-width: 400px) {
+    .Section--split {
+        flex-direction: column;
+    }   
+}

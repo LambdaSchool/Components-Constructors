@@ -1,0 +1,39 @@
+.Dropdown {
+    margin-left: 10px;
+    display: inline-block;
+    position: absolute;
+}
+
+.Dropdown__button {
+    border: 4px solid black;
+    padding: 15px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Dropdown__content {
+    display: none;
+}
+
+.Dropdown__list {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Dropdown__list a {
+    margin: 5px;
+    text-decoration: none;
+}
+
+.Dropdown--box .Dropdown__content {
+    z-index: 5;
+    margin-top: 13px;
+    background-color: white;
+    position: absolute;
+    display: block;
+    border: 2px solid black;
+}
+

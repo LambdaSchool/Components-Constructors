@@ -34,12 +34,9 @@ class Tabs {
     this.links = Array.from(this.links).map((link) => {
       return new TabsLink(link);
     });
-    this.tabs = element.querySelectorAll(".Tabs__item")
-    this.tabs = Array.from(this.tabs).map((tab) => {
-      return new TabsItem(tab);
-    });
+    this.tab = new TabsItem(element.querySelector(".Tabs__item"));
     this.activeLink = this.links[0];
-    this.activeTab = this.tabs[0];
+    this.activeTab = this.tab;
     this.init();
     this.toggleTab();
   }

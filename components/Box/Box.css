@@ -1,0 +1,8 @@
+.Box {
+    border: black solid 3px;
+    padding-left: 0.8%;
+}
+
+.Box__text {
+    text-align: left;
+}

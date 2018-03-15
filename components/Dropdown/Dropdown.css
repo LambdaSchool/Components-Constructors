@@ -1,0 +1,43 @@
+.Dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: black solid 3px;
+    margin-left: 1%;
+    position: absolute;
+}
+
+.Dropdown__button {
+    display: flex;
+    height: 10px;
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Dropdown__menu {
+    border: black solid 3px;
+    height: 90px;
+    width: 90px;
+    margin-top: 100px;
+    position: absolute;
+    display: none;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.Dropdown__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.Dropdown__items li a {
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.Dropdown__hidden {
+    display: none;
+}

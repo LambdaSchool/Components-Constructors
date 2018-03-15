@@ -48,14 +48,18 @@ class Tabs {
 
   toggleTab() {
     this.links.forEach((link) => {
-      link.element.addEventListener('click', (e) => {
-        this.updateActiveLink(link);
-        let tab = this.getTab(link.element.dataset.tab);
-        tab = new TabsItem(tab);
-        this.updateActiveTab(tab);
-      });
+      let tab = this.getTab(link.element.dataset.tab);
+      tab = new TabsItem(tab);
+      this.addEvent(link, tab);
     });
   };
+
+  addEvent(link, tab) {
+    link.element.addEventListener('click', () => {
+      this.updateActiveLink(link);
+      this.updateActiveTab(tab);
+    });
+  }
 
   updateActiveLink(newActive) {
     this.activeLink.deselect();

@@ -59,6 +59,16 @@ body {
 	border: 1px solid black;
 }
 
+.Box__description {
+	padding: 10% 10%;
+}
+
+.Box__title {
+	margin-left: 10%;
+	font-size: 150%;
+	font-weight: bold;
+}
+
 @media (max-width: 500px) {
 	.Section--Lower {
 		flex-direction: column;

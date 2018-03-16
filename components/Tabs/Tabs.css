@@ -1,3 +1,6 @@
+.Tabs {
+  margin-left: 5%;
+}
 .Tabs__item {
   display: none;
 }
@@ -8,7 +11,7 @@
 
 .Tabs__links {
   left: 0;
-  margin: 20px 0;
+  margin: 20px;
 }
 
 .Tabs__link {

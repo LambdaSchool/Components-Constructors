@@ -1,3 +1,6 @@
+@import './components/Section/Section.css';
+@import './components/Box/Box.css';
+@import './components/Dropdown/Dropdown.css';
 @import './components/Tabs/Tabs.css';
 
 body {
@@ -5,3 +8,4 @@ body {
 	min-width: 300px;
 	margin: 0;
 }
+

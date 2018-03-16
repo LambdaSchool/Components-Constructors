@@ -1,9 +1,11 @@
 .Section {
+	box-sizing: border-box;
 	display: inline-block;
-    border: 3px solid black;
-    align-items: center;
-    padding: 15px;
-    width: 100%;
+	clear: both;
+	width: 100%;
+	margin: 0;
+	padding: 20px;
+	position: relative;	
 }
 
 .Section--bordered {
@@ -17,16 +19,18 @@
 
 .Section__header {
 	text-align: center;
-	font-size: 2.5em;
+	font-size: 2.5rem;
 	font-weight: bold;
 }
 
 @media (max-width: 600px) {
+	.Section__header {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 600px) {
 	.Section--half {
-		/* box-sizing: border-box;
-		display: inline-block;
-		width: 50%;
-		padding: 20px; */
-		flex-direction: column;
+		width: 49%;
 	}
 }

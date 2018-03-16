@@ -1,11 +1,9 @@
 .Section {
-	box-sizing: border-box;
 	display: inline-block;
-	clear: both;
-	width: 100%;
-	margin: 0;
-	padding: 20px;
-	position: relative;
+    border: 3px solid black;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
 }
 
 .Section--bordered {
@@ -23,11 +21,12 @@
 	font-weight: bold;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
 	.Section--half {
-		box-sizing: border-box;
+		/* box-sizing: border-box;
 		display: inline-block;
 		width: 50%;
-		padding: 20px;
+		padding: 20px; */
+		flex-direction: column;
 	}
 }

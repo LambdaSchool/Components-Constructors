@@ -1,6 +1,6 @@
 **COMPONENTS-CONSTURCTORS**
 ----------------------------------
-
+**This assignment was done in Components BEM**
 Topics:
 * Naming Conventions
 * BEM

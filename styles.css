@@ -1,3 +1,6 @@
+@import './components/Section/Section.css';
+@import './components/Box/Box.css';
+@import './components/Dropdown/dropdown.css';
 @import './components/Tabs/Tabs.css';
 
 body {

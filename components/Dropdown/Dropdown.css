@@ -1,0 +1,26 @@
+
+.Dropdown__button {
+    margin-top: 30px;
+    align-items: center;
+    min-width: 160px;
+    height: 30px;
+    border: 3px solid black;
+    padding-left: 12px;
+    padding-top: 5px;
+    padding-right: 0;
+    position: absolute;
+ }
+
+.Dropdown__Menu {
+    visibility: hidden;
+    list-style: none;
+}
+
+.Dropdown__Menu li {
+    border: 1px solid black;
+    background-color: #F9F9F9;
+}
+
+.show {
+    visibility: visible;
+}

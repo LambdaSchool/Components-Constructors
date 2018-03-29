@@ -1,7 +1,7 @@
 class TabsItem {
   constructor(element) {
     // attach dom element to object. Example in Tabs class
-    this.items = element.querySelectorAll(".Tabs__item");
+
   }
 
   select() {

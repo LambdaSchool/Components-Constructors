@@ -70,6 +70,10 @@
 
 
 let buttons = document.querySelectorAll(".Tabs__link");
+// // buttons.style.display = "box"
+// let test = document.querySelectorAll("Block__header");
+// test.style.color = red;
+// alert("hello")
 class Tabs {
   constructor(element) {
     this.element = element;

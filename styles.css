@@ -1,7 +1,37 @@
 @import './components/Tabs/Tabs.css';
+@import './components/Section/Section.css';
+@import './components/Box/Box.css';
+@import './components/Dropdown/Dropdown.css';
+@media (max-width: 1920px) {
+	body {
+		box-sizing: border-box;
+		min-width: 300px;
+		margin: 0;
+		display: inline-block;
+		width: 100%;
+		/* width: 500px;
+		height: 500px; */
+		border: 2px solid red;
+	}
+}
 
-body {
+
+@media (max-width: 400px) {
+	body{
+		box-sizing: border-box;
+		min-width: 300px;
+		max-width: 400px;
+		margin: 0;
+		/* display: inline-flex; */
+		display: inline-block;
+		width: 100%;
+		justify-content: center;
+	}
+}
+
+
+/* body {
 	box-sizing: border-box;
 	min-width: 300px;
 	margin: 0;
-}
+} */

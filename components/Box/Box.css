@@ -1,0 +1,26 @@
+.box--display {
+    display: flex;
+}
+
+.box--column {
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+.box--paragraph {
+    font-size: 1.4rem;
+}
+
+.box__heading {
+    font-size: 2.2em;
+}
+
+.Box__title {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.Box__description {
+    font-size: 1.2em;
+}

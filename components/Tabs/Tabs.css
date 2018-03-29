@@ -1,3 +1,79 @@
+.Header {
+  width: 100%;
+  border: 2px solid black;
+  text-align: center;
+  padding: 17px;
+}
+
+.Block__header {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.Block {
+  display: flex;  
+}
+
+.Block__first {  
+  border: 2px solid black;
+  padding: 0 1% 0 1%;
+}
+
+.Block__second {
+  border: 2px solid black;
+  padding: 0 1% 0 1%;
+}
+
+.Dropdown{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: absolute;
+  margin-left: 0.2%;
+  top: 2.5%;
+}
+.Dropbtn {
+  border: solid black;
+  background: white;
+  
+  padding:  11px 11px 11px 11px;
+}
+
+.dropdown__content{
+  display: none;    
+  border: solid black;
+  background: white;
+  margin-top: 10px;
+}
+.dropdown__a {
+  display: block;   
+  text-align: left;    
+  padding: 7px 7px;
+}
+
+.Dropdown--open {
+  display: block;
+}
+
+/* TABS */
+
+.Tabs__all {
+  display:flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-bottom: 3px solid black;
+}
+
+.Tabs__menu {
+  width: 100%;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-left: 0.7%;
+  margin-top: 22px;
+}
+
 .Tabs__item {
   display: none;
 }
@@ -15,11 +91,23 @@
   display: inline-block;
   box-sizing: border-box;
   padding: 10px 15px;
-  margin: 10px 10px 10px 0;
+  margin: 10px 0 10px 22px;
   background-color: gray;
 }
 
 .Tabs__link-selected {
   background-color: white;
   border: solid 1px gray;
+}
+
+/* Boxex */
+
+.Box {
+  margin:0 22px 22px 22px;
+}
+
+.Box__title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 11px;
 }

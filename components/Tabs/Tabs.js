@@ -65,15 +65,16 @@ class Tabs {
   updateActive(newActive) {
     // deselect the old active link
     // assign the new active link
+    this.activeLink.deselect;
+    this.activeLink = event.currentTarget;
   }
 
   getTab(data) {
     // use the tab item classname and the data attribute to select the proper tab
+    return document.querySelector(`.Tabs__item[data-tab="${this.dataTab}"]`);
   }
 
 }
 
 let tabs = document.querySelectorAll(".Tabs");
 tabs = Array.from(tabs).map(tabs => new Tabs(tabs));
-
-

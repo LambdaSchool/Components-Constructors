@@ -6,12 +6,12 @@ class TabsItem {
 
   select() {
     // should use classList
-    element.classList.add("Tabs__item-selected");
+    element.classList.add("Tabs__item-selected"); //should reveal itself upon being clicked
   }
 
   deselect() {
     // should use classList
-    element.classList.remove("Tabs__item");
+    element.classList.remove("Tabs__item-selected"); //should hide itself upon being unclicked
   }
 }
 

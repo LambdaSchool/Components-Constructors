@@ -1,8 +1,8 @@
 .Tabs__item {
-  display: none;
+display: none;
 }
 
-.Tabs__item-selected {
+.Tabs__item--selected {
   display: block;
 }
 
@@ -15,11 +15,17 @@
   display: inline-block;
   box-sizing: border-box;
   padding: 10px 15px;
-  margin: 10px 10px 10px 0;
+  margin: 10px 5px 10px 15px;
   background-color: gray;
+  border: 2px solid grey;
+  cursor: pointer;
 }
 
-.Tabs__link-selected {
+.Tabs__link--selected {
   background-color: white;
   border: solid 1px gray;
+}
+
+.Tabs__show {
+  background-color: white;
 }

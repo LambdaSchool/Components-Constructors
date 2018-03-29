@@ -1,0 +1,38 @@
+.header__dropdown {
+  position: absolute;
+  padding: 30px;
+}
+
+.header_dropdown--hover {
+  cursor: pointer;
+}
+
+.dropdown__title {
+  padding: 12px;
+  border: 2px solid black;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.dropdown__list {
+  margin-top: 12px;
+  padding: 8px;
+  display: none;
+  flex-direction: column;
+  width: 80%;
+  background: white;
+  border: 2px solid black;
+}
+
+a {
+  margin-bottom: 5px;
+}
+
+.roll {
+  display: flex;
+}

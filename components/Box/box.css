@@ -13,6 +13,11 @@
 	border: 2px solid black;
 }
 
+.Box__title--bold {
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 1.2rem;
+}
 
 @media (max-width: 560px) {
 	.Boxes {

@@ -1,10 +1,11 @@
 .Tabs__item {
-  display: none;
+  display: none;   
 }
 
 .Tabs__item-selected {
   display: block;
 }
+
 
 .Tabs__links {
   left: 0;

@@ -1,3 +1,8 @@
+
+@import './components/Section/Section.css';
+@import './components/Box/Box.css';
+@import './components/Header/Header.css';
+@import './components/Dropdown/Dropdown.css';
 @import './components/Tabs/Tabs.css';
 
 body {
@@ -5,3 +10,19 @@ body {
 	min-width: 300px;
 	margin: 0;
 }
+h3 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 40px; 
+  }
+  
+  @media (max-width: 600px) {
+	.Header {
+	  font-size: 32px;
+  
+	}
+  }
+ .LowerHeader {
+	 display: flex; 
+	 justify-content: center; 
+ }

@@ -1,0 +1,10 @@
+.Section {
+    display: flex;
+    padding: 10px; 
+  }
+  
+  @media (max-width: 600px) {
+    .Section {
+      flex-direction: column;
+    }
+  }

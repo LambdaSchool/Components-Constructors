@@ -1,0 +1,33 @@
+.Dropdown {
+    position: absolute; /* keeps dropdown going down*/
+    padding-top: 45px;
+    padding-left: 15px;
+    cursor: pointer;
+  }
+  
+  .Dropdown__Title {
+    padding: 10px;
+    border: 2px solid black;
+  }
+  
+  .Dropdown__List {
+    margin-top: 10px;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    line-height: 2; 
+    width: 78px;
+    background: white;
+    border: 2px solid black;
+  }
+  
+  .display {
+    display: flex;
+    align-self: center; 
+  }
+  
+  @media (max-width: 600px) {
+    .Dropdown {
+      padding: 20px 0 0 20px;
+    }
+  }

@@ -67,7 +67,9 @@ class Tabs {
 
   updateActive(newActive) {
     // deselect the old active link
+    this.activeLink.deselect();
     // assign the new active link
+    this.activeLink = newActive;
   }
 
   getTab(data) {

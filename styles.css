@@ -1,7 +1,91 @@
 @import './components/Tabs/Tabs.css';
 
-body {
+* {
 	box-sizing: border-box;
+}
+
+body {
 	min-width: 300px;
 	margin: 0;
+}
+
+section {
+	border: 1px solid black;
+}
+
+.dropdown {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+.dropdown__button {
+	background-color: white;
+	padding: 10px 0;
+	width: 200px;
+	font-size: 16px;
+	border: 1px solid black;
+}
+
+.dropdown__menu {
+	display: none;
+	margin-top: 3px;
+	background-color: white;
+	flex-direction: column;
+	width: 198px;
+	border: 1px solid black;
+}
+
+.dropdown__menu--show {
+	display: flex;
+}
+
+.dropdown__menu a {
+	text-decoration: none;
+	color: black;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.dropdown__menu a:hover {
+	background-color: black;
+	color: white;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+}
+
+.content__block {
+	width: 50%;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+@media(max-width: 400px) {
+	.content {
+		flex-direction: column;
+	}
+	.content__block {
+		width: 100%;
+	}
+	.header {
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	.dropdown {
+		position: inherit;
+		margin-bottom: 10px;
+	}
+	.dropdown__menu {
+		position: absolute;
+	}
 }

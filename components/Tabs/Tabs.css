@@ -67,7 +67,10 @@
 .Tabs__menu {
   width: 100%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-left: 0.7%;
+  margin-top: 22px;
 }
 
 .Tabs__item {
@@ -87,11 +90,23 @@
   display: inline-block;
   box-sizing: border-box;
   padding: 10px 15px;
-  margin: 10px 10px 10px 0;
+  margin: 10px 0 10px 22px;
   background-color: gray;
 }
 
 .Tabs__link-selected {
   background-color: white;
   border: solid 1px gray;
+}
+
+/* Boxex */
+
+.Box {
+  margin:0 22px 22px 22px;
+}
+
+.Box__title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 11px;
 }

@@ -1,63 +1,121 @@
+<hml>
 
-<!-- Place the following in a section -->
+	<head>
+		<title>Introduction to the DOM</title>
+		<link rel="stylesheet" href="./styles.css">
+		<script defer="defer" src="./components/Dropdown/Dropdown.js"></script>
+		<script defer="defer" src="./components/Tabs/Tabs.js"></script>
+	</head>
 
-<div class="Tabs">
-	<div class="Tabs_links">
-		<div class="Tabs__link" data-tab="1">Tab 1</div>
-		<div class="Tabs__link" data-tab="2">Tab 2</div>
-		<div class="Tabs__link" data-tab="3">Tab 3</div>
-	</div>
+	<body>
+		<!-- __________HEADER__________ -->
 
-	<div class="Tabs__item" data-tab="1">
-		<div class="Box">
-			<div class="Box__title">Box # 1</div>
-			<div class="Box__description">They dined on mince, and slices of quince
-				Which they ate with a runcible spoon;
-				<br>
-				And hand in hand, on the edge of the sand,
-				<br>
-				They danced by the light of the moon,
-				<br>
-				The moon,
-				<br>
-				The moon,
-				<br>
-				They danced by the light of the moon.
-				<br>
-				- Edward Lear
+		<!-- dropdown menu -->
+		<div class="Dropdown">
+			<div class="Dropdown__button">
+				<button class="Dropdown__buttonTitle">Dropdown</button>
+			</div>
+			<div class="Dropdown__menu">
+				<a href="https://www.lambdaschool.com/" class="Dropdown__link">Lambda</a>
+				<a href="https://www.google.com/" class="Dropdown__link">Google</a>
+				<a href="https://developer.mozilla.org/en-US/" class="Dropdown__link">MDN</a>
 			</div>
 		</div>
-	</div>
-	<div class="Tabs__item" data-tab="2">
+
+		<!-- header headline -->
 		<div class="Box">
-			<div class="Box__title">Box # 2</div>
-			<div class="Box__description">There was an old man of St. Bees,
-				Who was stung in the arm by a wasp,
-				<br>
-				When asked, "Does it hurt?"
-				<br>
-				He replied, "No, it doesn't,
-				<br>
-				I'm so glad it wasn't a hornet."
-				<br>
-				- W.S Gilbert
+			<div class="Box__header">
+				<h1 class="Box__headerHeadline">Header</h1>
 			</div>
 		</div>
-	</div>
-	<div class="Tabs__item" data-tab="3">
-		<div class="Box">
-			<div class="Box__title">Box # 3</div>
-			<div class="Box__description">A dozen, a gross, and a score
-				Plus three times the square root of four
-				<br>
-				Divided by seven
-				<br>
-				Plus five times eleven
-				<br>
-				Is nine squared and not a bit more.
-				<br>
-				- Leigh Mercer
+
+		<!-- __________SECTIONS__________ -->
+		<div class="Section">
+			<!-- section box one -->
+			<div class="Section__box">
+				<div class="Section__header">
+					<h3 class="Section__headline">Placeholder</h3>
+				</div>
+				<div class="Section__text">
+					<p class="Section__textPara">Bacon ipsum dolor amet strip steak beef ribs t-bone venison porchetta, sirloin pork chop meatball alcatra short loin
+						chicken biltong rump. Swine ham pork chop sausage brisket prosciutto hamburger fatback pancetta. Alcatra beef jerky
+						filet mignon, sausage shoulder short loin chicken ground round. Burgdoggen short loin jowl ground round pancetta hamburger
+						alcatra beef ribs. Filet mignon chicken meatloaf shank, beef pig leberkas tenderloin cupim meatball.</p>
+				</div>
+			</div>
+
+			<!-- section box two -->
+			<div class="Section__box">
+				<div class="Section__header">
+					<h3 class="Section__headline">Placeholder</h3>
+				</div>
+				<div class="Section__text">
+					<p class="Section__textPara">Bacon ipsum dolor amet strip steak beef ribs t-bone venison porchetta, sirloin pork chop meatball alcatra short loin
+						chicken biltong rump. Swine ham pork chop sausage brisket prosciutto hamburger fatback pancetta. Alcatra beef jerky
+						filet mignon, sausage shoulder short loin chicken ground round. Burgdoggen short loin jowl ground round pancetta hamburger
+						alcatra beef ribs. Filet mignon chicken meatloaf shank, beef pig leberkas tenderloin cupim meatball.</p>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- __________TABS__________ -->
+		<!-- tab menu headline -->
+		<div class="Box Box--bottomBorder">
+			<div class="Box__tabMenu">
+				<h1 class="Box__tabMenuHeadline">Tab Menu</h1>
 			</div>
 		</div>
-	</div>
-</div>
+
+		<!-- tab links -->
+		<div class="Tabs">
+			<div class="Tabs__links">
+				<div class="Tabs__link" data-tab="1">Tab 1</div>
+				<div class="Tabs__link" data-tab="2">Tab 2</div>
+				<div class="Tabs__link" data-tab="3">Tab 3</div>
+			</div>
+
+			<!-- tab 1 -->
+			<div class="Tabs__item" data-tab="1">
+				<div class="Box Box--tab">
+					<h3 class="Box__title">Box # 1</h3>
+					<div class="Box__description">They dined on mince, and slices of quince Which they ate with a runcible spoon;
+						<br> And hand in hand, on the edge of the sand,
+						<br> They danced by the light of the moon,
+						<br> The moon,
+						<br> The moon,
+						<br> They danced by the light of the moon.
+						<br> - Edward Lear
+					</div>
+				</div>
+			</div>
+
+			<!-- tab 2 -->
+			<div class="Tabs__item" data-tab="2">
+				<div class="Box Box--tab">
+					<h3 class="Box__title">Box # 2</h3>
+					<div class="Box__description">There was an old man of St. Bees, Who was stung in the arm by a wasp,
+						<br> When asked, "Does it hurt?"
+						<br> He replied, "No, it doesn't,
+						<br> I'm so glad it wasn't a hornet."
+						<br> - W.S Gilbert
+					</div>
+				</div>
+			</div>
+
+			<!-- tab 3 -->
+			<div class="Tabs__item" data-tab="3">
+				<div class="Box Box--tab">
+					<h3 class="Box__title">Box # 3</h3>
+					<div class="Box__description">A dozen, a gross, and a score Plus three times the square root of four
+						<br> Divided by seven
+						<br> Plus five times eleven
+						<br> Is nine squared and not a bit more.
+						<br> - Leigh Mercer
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</hml>

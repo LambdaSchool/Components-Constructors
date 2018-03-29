@@ -1,14 +1,20 @@
+.Tabs {  
+  border: 2px black solid;
+  border-top: 0px;  
+}
+
 .Tabs__item {
   display: none;
 }
 
-.Tabs__item-selected {
+.Tabs__item--selected {
   display: block;
 }
 
 .Tabs__links {
   left: 0;
-  margin: 20px 0;
+  /* margin: 20px 0; */
+  margin-left: 20px;
 }
 
 .Tabs__link {
@@ -19,7 +25,7 @@
   background-color: gray;
 }
 
-.Tabs__link-selected {
+.Tabs__link--selected {
   background-color: white;
   border: solid 1px gray;
 }

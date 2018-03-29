@@ -7,7 +7,7 @@
   display: none;
 }
 
-.Tabs__item-selected {
+.Tabs__item--selected {
   display: block;
 }
 
@@ -25,7 +25,7 @@
   background-color: gray;
 }
 
-.Tabs__link-selected {
+.Tabs__link--selected {
   background-color: white;
   border: solid 1px gray;
 }

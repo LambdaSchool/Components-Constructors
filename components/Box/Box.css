@@ -26,3 +26,11 @@
 .Box__tabMenuHeadline {
   text-align: center;
 }
+
+.Box__title {
+  margin-left: 20px;
+}
+
+.Box__description {
+  display: flex;
+}

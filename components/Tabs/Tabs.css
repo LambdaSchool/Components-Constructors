@@ -1,25 +1,37 @@
-.Tabs__item {
+.tabs {
+	padding: 10px;
+}
+
+.tabs__tab-bar {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.tabs__link {
+	background-color: white;
+	border: 1px solid black;
+	padding: 10px 0;
+	width: 100px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.tabs__link--active {
+  background-color: teal;
+  color: white;
+  border: 1px solid greenyellow;
+}
+
+.tabs__link:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;	
+}
+
+.tabs__item {
   display: none;
 }
 
-.Tabs__item-selected {
+.tabs__item--active {
   display: block;
-}
-
-.Tabs__links {
-  left: 0;
-  margin: 20px 0;
-}
-
-.Tabs__link {
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 10px 15px;
-  margin: 10px 10px 10px 0;
-  background-color: gray;
-}
-
-.Tabs__link-selected {
-  background-color: white;
-  border: solid 1px gray;
 }

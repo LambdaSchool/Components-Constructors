@@ -20,7 +20,6 @@ class TabsItem {
   }
 }
 
-// TabsLink connects a link to its corresponding item
 class TabsLink {
   constructor(element, parent) {
     this.element = element;// attach dom element to object

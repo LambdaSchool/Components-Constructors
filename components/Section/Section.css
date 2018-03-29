@@ -1,0 +1,8 @@
+
+.Section {
+  	border: 3px solid black;
+}
+
+.Section__head {
+	text-align: center;
+}

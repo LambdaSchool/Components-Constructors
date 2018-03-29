@@ -6,11 +6,12 @@
   display: block;
 }
 
+/* list container */
 .Tabs__links {
   left: 0;
   margin: 20px 0;
 }
-
+/* items in the list*/
 .Tabs__link {
   display: inline-block;
   box-sizing: border-box;

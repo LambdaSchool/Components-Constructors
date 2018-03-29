@@ -1,0 +1,22 @@
+.Container{
+  border: 2px solid black;
+  &--displayNone{
+    &:extend(.displayNone);
+  }
+  &--Header{
+    &:extend(.headerText);
+    margin: 1rem 0;
+  }
+  &--noBorder-top {
+    &:extend(.noBorder-top);
+  }
+}
+.Header{
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  &__Text{
+    &:extend(.headerText);
+    padding: 1rem 0;
+  }
+}

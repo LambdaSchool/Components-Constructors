@@ -7,20 +7,25 @@
 }
 
 .Tabs__links {
-  justify-content: flex-start
-  left: 0;
-  margin: 20px 0;
+  justify-content: flex-start;
+  left: 10px;
+  margin: 20px;
 }
 
 .Tabs__link {
   display: inline-block;
   box-sizing: border-box;
   padding: 10px 15px;
-  margin: 10px 10px 10px 0;
+  margin: 10px 10px 10px;
   background-color: gray;
+  cursor: pointer;
 }
 
 .Tabs__link-selected {
   background-color: white;
   border: solid 1px gray;
+}
+
+.Box__title {
+   
 }

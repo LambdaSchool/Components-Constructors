@@ -38,6 +38,10 @@ h1 {
 	padding: 10px;
 }
 
+.Tabs {
+	position: relative;
+}
+
 .Tabs__header {
 	text-align: center;
 	margin: 0;

@@ -24,6 +24,9 @@ class TabsItem {
 class TabsLink {
   constructor(element) {
     this.element = element;
+    this.dataTab = element.dataset.tab;
+    this.element.addEventListener(click, () => {this.buttonClick()});
+    this.Tabs__item = document.querySelector(`.Tabs__item[data-tab="${this.dataTab}"]`);
   };
 
   select() {
@@ -38,5 +41,5 @@ class TabsLink {
 class Tabs {
   constructor(element) {
     this.element = element;
-    this.
+
   }

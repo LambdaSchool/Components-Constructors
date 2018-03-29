@@ -6,18 +6,18 @@ class TabsItem {
     console.log(this.element);
     this.dataTab = element.dataset.tab;
     console.log(this.dataTab);
-    this.tabsItem = document.querySelector(`.Tabs__item[data-tab="${this.dataTab}"]`);
-    console.log(this.tabsItem);
+    // this.tabsItem = document.querySelector(`.Tabs__item[data-tab="${this.dataTab}"]`);
+    // console.log(this.tabsItem);
   }
 
   select() {
     // should use classList
-    this.tabsItem.classList.toggle('Tabs__item-selected');
+    this.element.classList.toggle('Tabs__item-selected');
   }
 
   deselect() {
     // should use classList
-    this.tabsItem.classList.toggle('Tabs__item');
+    this.element.classList.toggle('Tabs__item');
   }
 }
 
@@ -29,6 +29,7 @@ class TabsLink {
     this.tabsItem = this.tabs.getTab(`.Tabs__item[data-tab="${this.element.dataset.tab}"]`);// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
     // reassign this.tabsItem to be a new instance of TabsItem, passing it this.tabsItem
     this.tabsItem = new TabsItem(this.tabsItem);
+    console.log(this.tabsItem);
     this.element.addEventListener('click', () => {
       this.tabs.updateActive(this);
       this.select();
@@ -58,7 +59,7 @@ class Tabs {
     });
     // console.log(this.links);
     this.activeLink = this.links[0];
-    // console.log(this.activeLink);
+    console.log(this.activeLink);
     this.init();
   }
 

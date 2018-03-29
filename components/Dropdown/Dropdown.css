@@ -1,0 +1,41 @@
+.dropdown {
+	position: absolute;
+	left: 10px;
+	/* top: 10px; */
+}
+
+.dropdown__button {
+	background-color: white;
+	padding: 10px;
+	max-width: max-content;
+	font-size: 16px;
+    border: 1px solid black;
+    color: black;
+	cursor: pointer;
+}
+
+.dropdown__menu {
+	display: none;
+	margin-top: 3px;
+	position: absolute;
+	min-width: 70%;
+	background-color: white;
+	flex-direction: column;
+	max-width: 100%;  /* width: 198px; */
+	border: 1px solid black;
+}
+
+.dropdown__menu--show {
+	display: flex;
+}
+
+.dropdown__menu a {
+	color: black;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.dropdown__menu a:hover {
+	background-color: black;
+	color: white;
+}

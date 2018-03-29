@@ -3,6 +3,10 @@
   display: flex;
 }
 
+.Box--tab {
+  display: inline;
+}
+
 .Box--bottomBorder {
   border-bottom: 0px;
 }
@@ -32,5 +36,5 @@
 }
 
 .Box__description {
-  display: flex;
+  margin-left: 20px;
 }

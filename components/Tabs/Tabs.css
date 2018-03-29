@@ -23,3 +23,17 @@
   background-color: white;
   border: solid 1px gray;
 }
+
+.Tabs {
+  border: 2px solid black;
+  border-top: 0;
+}
+
+.Box--column {
+  flex-direction: column;
+}
+
+.Box__title {
+  font-size: 2rem;
+  font-weight: bolder;
+}

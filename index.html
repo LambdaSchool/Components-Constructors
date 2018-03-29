@@ -3,12 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Introduction to the DOM</title>
-		<link rel="stylesheet" href="css/index.css">
-		<script type="text/javascript" src="./index.js" async></script>
+		<link rel="stylesheet" href="./styles.css">
+		<script type="text/javascript" src="./components/Dropdown/Dropdown.js" async></script>
 	</head>
 	<body>
-			
-		<header class="Section">
+
+		<header class="Section Section--bordered Section--full">
 			<div class="Dropdown">
 				<div class="Dropdown__button">Dropdown</div>
 				<div class="Dropdown__content">
@@ -16,18 +16,19 @@
 					<a class="Dropdown__link" href="#">Google</a>
 					<a class="Dropdown__link" href="#">MDN</a>
 				</div>
-			</div> <!-- end of dropdown -->
-			<h1 class="Section__header">Header</h1>
+			</div>
+			<div class="Section__header">Header</div>
 		</header>
 
-		<div class="Section Section--bordered">
-			<div class="Box--left">
+		<div class="Section Section--bordered Section--half">
+			<div class="Box">
 				<h3 class="Box__title">Placeholder</h3>
 				<p class="Box__content">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.
 				</p>
 			</div>
-			<div class="Box--right">
+		</div><div class="Section Section--bordered Section--half">
+			<div class="Box">
 				<h3 class="Box__title">Placeholder</h3>
 				<p class="Box__content">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.
@@ -95,7 +96,7 @@
 						</div>
 					</div>
 				</div>
-			</div>			
+			</div>
 		</div>
 
 	</body>

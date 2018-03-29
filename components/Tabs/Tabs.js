@@ -3,8 +3,10 @@ class TabsItem {
   constructor(element) {
     // attach dom element to object. Example in Tabs class
     this.element = element;
-    // console.log(this.element);
-    // console.log(this.dataTab);
+<<<<<<< HEAD
+||||||| merged common ancestors
+=======
+>>>>>>> 4a717236e534958cd13accb5be82d7b226471322
   }
 
   select() {
@@ -58,7 +60,10 @@ class Tabs {
     });
     // console.log(this.links);
     this.activeLink = this.links[0];
-    // console.log(this.activeLink);
+<<<<<<< HEAD
+||||||| merged common ancestors
+=======
+>>>>>>> 4a717236e534958cd13accb5be82d7b226471322
     this.init();
   }
 
@@ -83,6 +88,3 @@ class Tabs {
 
 let tabs = document.querySelectorAll(".Tabs");
 tabs = Array.from(tabs).map(tabs => new Tabs(tabs));
-
-
-

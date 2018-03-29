@@ -17,9 +17,14 @@
   padding: 10px 15px;
   margin: 10px 10px 10px 0;
   background-color: gray;
+  border: none;
 }
 
 .Tabs__link-selected {
   background-color: white;
   border: solid 1px gray;
+}
+.Tabs__link-deselected{
+background-color: gray;
+border: none;
 }

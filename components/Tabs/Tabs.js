@@ -66,10 +66,12 @@ class Tabs {
     this.activeLink.deselect();
     // assign the new active link
     this.activeLink = newActive;
+    this.activeLink.select();
   }
 
-  getTab(data) {
+  getTab(datasetwaht) {
     // use the tab item classname and the data attribute to select the proper tab
+    return this.element.querySelector(`.Tabs__item[data-tab="${datasetwaht}"]`);
   }
 
 }

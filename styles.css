@@ -1,7 +1,32 @@
 @import './components/Tabs/Tabs.css';
+@import './components/Section/Section.css';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
 
 body {
-	box-sizing: border-box;
-	min-width: 300px;
-	margin: 0;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: '🤖' '📕' '📖';
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  body {
+    min-width: 1000px;
+  }
+  .container {
+    grid-template-areas: '🤖 🤖' '📕 📖';
+  }
 }

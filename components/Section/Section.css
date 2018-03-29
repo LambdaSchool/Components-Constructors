@@ -1,0 +1,56 @@
+section {
+  border: 5px solid black;
+  padding: 10px;
+}
+
+/* Header */
+.Header {
+  grid-area: 🤖;
+  display: grid;
+  grid-template-areas: "dropdown heading .";
+}
+
+.Header--dropdown {
+  border: 5px solid black;
+  font-size: 1.5em;
+  grid-area: dropdown;
+  max-width: 70%;
+  max-height: 2.5em;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .Header--dropdown {
+    max-width: 35%;
+  }
+}
+
+.Header--dropdown:hover {
+  cursor: pointer;
+}
+.Header--h1 {
+  grid-area: heading;
+  font-size: 4em;
+  margin: 0px;
+}
+
+.Header--nav {
+  display: none;
+  /* TODO: make this pretty */
+}
+
+.Section1 {
+  grid-area: 📕;
+}
+
+.Section2 {
+  grid-area: 📖;
+}
+
+.content--heading {
+  font-size: 2em;
+}
+
+.content--blurb {
+  font-size: 1.4em;
+}

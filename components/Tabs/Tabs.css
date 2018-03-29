@@ -1,3 +1,15 @@
+.Tabs {
+  width: 100%;
+  padding: 20px;
+  border: 3px solid black;
+}
+
+.Tabs__header {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .Tabs__item {
   display: none;
 }
@@ -17,6 +29,7 @@
   padding: 10px 15px;
   margin: 10px 10px 10px 0;
   background-color: gray;
+  cursor: pointer;
 }
 
 .Tabs__link-selected {

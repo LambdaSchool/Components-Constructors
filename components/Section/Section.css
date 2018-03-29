@@ -1,4 +1,4 @@
-.Section {
+/* .Section {
     box-sizing: border-box;
     display: inline-block;
     clear: both;
@@ -16,4 +16,19 @@
 
 .Section--border {
     border: 2px solid black;
+} */
+
+.Header {
+    display: flex;
+    border: 2px solid black;
+    height: 80px;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
 }
+
+.Header__headline {
+    margin-right: 45%;
+    margin-left: 400px;
+}
+
+

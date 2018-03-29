@@ -1,8 +1,13 @@
+//variables
+let tabButtons = document.querySelectorAll(".Tabs__links");
+
+
 class TabsItem {
   constructor(element) {
     // attach dom element to object. Example in Tabs class
     this.element = element;
   }
+
 
   select() {
     // should use classList
@@ -15,6 +20,7 @@ class TabsItem {
   }
 }
 
+// the actual tab buttons themselves
 class TabsLink {
   constructor(element) {
     this.element = element;
@@ -28,3 +34,9 @@ class TabsLink {
     this.element.classList.remove("Tabs_link-selected");
   }
 }
+
+class Tabs {
+  constructor(element) {
+    this.element = element;
+    this.
+  }

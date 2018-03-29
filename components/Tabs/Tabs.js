@@ -28,15 +28,15 @@ class TabsLink {
   select() {
     // select this link
     // select the associated tab
-    this.deselect();
+    this.element.classList.toggle('Tabs__item--selected');
     this.tabsItem.select();
-    this.tabs.getTab(this).classList.toggle('Tabs__item-selected');
   }
 
   deselect() {
     // deselect this link
     // deselect the associated tab
     this.element.classList.toggle('Tabs__item-selected');
+    this.tabsItem.deselect();
   }
 }
 
@@ -67,9 +67,8 @@ class Tabs {
   getTab(data) {
     // use the tab item classname and the data attribute to select the proper tab
     this.dataNumber = data.dataset.tab;
-    this.tabAddress = document.querySelector(`.Tabs__item[data-tab="${this.dataNumber}"]`);
-    console.log(this.tabAddress);
-    return this.tabAddress;
+    return document.querySelector(`.Tabs__item[data-tab="${this.dataNumber}"]`);
+    //console.log(this.tabAddress);
   }
 
 }

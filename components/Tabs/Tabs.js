@@ -7,7 +7,7 @@ class TabsItem {
 
   select() {
     // should use classList
-    this.element.classList.toggle('.Tabs__item-selected');
+    this.element.classList.add('.Tabs__item-selected');
   }
 
   deselect() {
@@ -19,10 +19,10 @@ class TabsItem {
 class TabsLink {
   constructor(element, parent) {
     this.element = element;// attach dom element to object
-    this.tabs = parent.tabs;// attach parent to object
-    this.tabsItem = new getTab(this.getTab);// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
+    this.tabs = parent;// attach parent to object
+    this.tabsItem = this.tabs.getTab(this.element.dataset.tab);// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
     // reassign this.tabsItem to be a new instance of TabsItem, passing it this.tabsItem
-    this.tabsItem = this.tabsItem;
+    this.tabsItem = new TabsItem(this.tabs);
     this.element.addEventListener('click', () => {
       this.tabs.updateActive(this);
       this.select();
@@ -32,13 +32,15 @@ class TabsLink {
   select() {
     // select this link
     // select the associated tab
-    this.tabsItem.classList.toggle('.Tabs__link-selected');
+    this.element.classList.add('.Tabs__link-selected');
+    this.tabsItem.select();
   }
 
   deselect() {
     // deselect this link
     // deselect the associated tab
-    this.tabsItem.classList.remove('.Tabs__link-selected');
+    this.element.classList.remove('.Tabs__link-selected');
+    this.tabsItem.deselect();
   }
 }
 
@@ -55,16 +57,19 @@ class Tabs {
 
   init() {
     // select the first link and tab upon ititialization
-    
+    this.activeLink.select();
   }
 
   updateActive(newActive) {
     // deselect the old active link
     // assign the new active link
+    this.activeLink.deselect();
+    newActive.select();
   }
 
   getTab(data) {
     // use the tab item classname and the data attribute to select the proper tab
+    return document.querySelector(`Tabs__link-selected[data-tab= "${data}"]`);
   }
 
 }

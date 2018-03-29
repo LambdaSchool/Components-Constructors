@@ -1,0 +1,19 @@
+.Box {
+    width: 49%;
+    height: 200px;
+    border: 2px solid black;
+    float: left;
+    margin-right: 0;
+}
+
+.Box--2 {
+    width: 50%;
+}
+
+.Box__header {
+    margin: 20px;
+}
+
+.Box__text {
+    margin: 20px;
+}

@@ -1,0 +1,34 @@
+/* .Section {
+    box-sizing: border-box;
+    display: inline-block;
+    clear: both;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+
+.Section__header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.Section--border {
+    border: 2px solid black;
+} */
+
+.Header {
+    display: flex;
+    border: 2px solid black;
+    height: 80px;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+.Header__headline {
+    margin-right: 45%;
+    margin-left: 400px;
+}
+
+

@@ -1,0 +1,30 @@
+
+.Dropdown__button {
+    margin-top: 30px;
+    align-items: center;
+    min-width: 160px;
+    height: 30px;
+    border: 3px solid black;
+    padding-left: 12px;
+    padding-top: 5px;
+    padding-right: 0;
+    position: absolute;
+ }
+
+ .Dropdown__Menu {
+    position: absolute;
+    background-color: white;
+    display: none;
+    margin-top: 10px;
+    padding: 15px;
+    border: 2.5px solid black;
+}
+
+.Dropdown__Menu li {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.show {
+    display: block;
+} 

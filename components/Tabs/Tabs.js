@@ -1,7 +1,6 @@
 class TabsItem {
   constructor(element) {
     this.element = element;
-    // this.tabNum = element.dataset.tab;
     // attach dom element to object. Example in Tabs class
   }
 
@@ -20,7 +19,6 @@ class TabsLink {
   constructor(element, parent) {
     this.element = element;// attach dom element to object
     this.tabs = parent;// attach parent to object
-    // this.tabNum = element.dataset.tab;
     this.tabsItem = document.querySelector(`.Tabs__item[data-tab="${element.dataset.tab}"]`);
     this.tabsItem = new TabsItem(this.tabsItem);
     // assign this to the associated tab using the

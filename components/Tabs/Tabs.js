@@ -1,6 +1,9 @@
 //variables
 const tabsLink = document.querySelectorAll('.Tabs__link');
 const boxstuff = document.querySelectorAll('.Tabs__item');
+let tabs = document.querySelectorAll(".Tabs");
+tabs = Array.from(tabs).map(tabs => new Tabs(tabs));
+
 class TabsItem {
   constructor(element) {
     // attach dom element to object. Example in Tabs class

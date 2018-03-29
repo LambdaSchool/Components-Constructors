@@ -1,0 +1,20 @@
+.Box__container {
+    display: flex;
+    width: 100%;
+}
+.Box {
+    padding: 15px;
+    border: 3px solid black;
+    border-bottom: 0px;
+}
+
+.Box__lower {
+    border: 0;
+    padding-top: 0;
+}
+
+@media (max-width: 600px) {
+    .Box__container {
+        flex-wrap: wrap;
+    }
+}

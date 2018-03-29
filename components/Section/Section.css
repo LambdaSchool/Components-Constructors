@@ -1,0 +1,18 @@
+.Section {
+    height: 80px;
+    border: 3px solid black;
+    border-bottom: 0px;
+}
+.Section__header {
+    margin-left: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+.Section2 {
+    border-bottom: 3px solid black;
+    height: 100%;
+}
+Section__header-lower {
+    margin-left: 0px;
+    padding-bottom: 0;
+}

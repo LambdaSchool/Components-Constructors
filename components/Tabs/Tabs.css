@@ -2,7 +2,7 @@
 display: none;
 }
 
-.Tabs__item--selected {
+.Tabs__item-selected {
   display: block;
 }
 
@@ -21,11 +21,7 @@ display: none;
   cursor: pointer;
 }
 
-.Tabs__link--selected {
+.Tabs__link-selected {
   background-color: white;
   border: solid 1px gray;
-}
-
-.Tabs__show {
-  background-color: white;
 }

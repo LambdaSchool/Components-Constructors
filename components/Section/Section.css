@@ -12,3 +12,7 @@
     border-bottom: 3px solid black;
     height: 100%;
 }
+Section__header-lower {
+    margin-left: 0px;
+    padding-bottom: 0;
+}

@@ -9,7 +9,7 @@ class TabsItem {
   }
 
   select() {
-    this.element.classList.toggle('tabs__link')
+    this.element.classList.toggle('tabs__item');
   }
 
   deselect() {
@@ -31,8 +31,8 @@ class TabsLink {
   };
 
   select() {
-    // select this link
-    // select the associated tab
+    this.element.classList.toggle('tabs__link');  // select this link
+    this.element.classList.toggle('tabs__item'); // select the associated tab
   }
 
   deselect() {
@@ -59,12 +59,12 @@ class Tabs {
   }
 
   updateActive(newActive) {
-    this.data-tab = toggle('tabs__item-selected');  // deselect the old active link
-    this.data-tab = toggle(this.'data-tab');   // assign the new active link
+    this.data-tab = toggle('data-tab'['']);  // deselect the old active link
+    this.data-tab = toggle(this.'data-tab'['']);   // assign the new active link
   }
 
   getTab(data) {
-   this.element.classList. // use the tab item classname and the data attribute to select the proper tab
+   this.element.classList.tab__item.data[].data-tab; // use the tab item classname and the data attribute to select the proper tab
   }
 
 }

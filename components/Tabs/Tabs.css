@@ -1,3 +1,13 @@
+.Tabs{
+  border: 2px solid black;
+  max-width: 800px;
+  
+  
+}
+.Tabs__h1{
+  display:flex;
+ justify-content: center;
+}
 .Tabs__item {
   display: none;
 }
@@ -5,6 +15,7 @@
 .Tabs__item-selected {
   display: block;
   padding-left: 15px;
+  padding-bottom:15px;
  
 }
 

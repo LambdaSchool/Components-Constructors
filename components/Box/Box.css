@@ -1,0 +1,28 @@
+.Box {
+  border: 2px black solid;
+  display: flex;
+}
+
+.Box--bottomBorder {
+  border-bottom: 0px;
+}
+
+.Box__header {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.Box__headerHeadline {
+  text-align: center;
+}
+
+.Box__tabMenu {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.Box__tabMenuHeadline {
+  text-align: center;
+}

@@ -1,4 +1,5 @@
 @import './components/Tabs/Tabs.css';
+/* @import would have been needed for Box & Section if I had decided to copy/paste all my css files into separate folders */
 
 body {
 	box-sizing: border-box;
@@ -6,7 +7,7 @@ body {
 	margin: 0;
 }
 
-/* Transferred from yesterdays proj */
+/* Transferred from yesterdays proj, styles.css */
 .Header {
 	text-align: center;
 	border: 2px solid black;
@@ -17,6 +18,7 @@ body {
     display: flex;
 }
 
+/* Transferred from yesterdays proj, Box.css */
 .Box {
     padding: 20px 15px;
     border: 3px solid black;
@@ -32,6 +34,7 @@ body {
     line-height: 1.5;
 }
 
+/* Transferred from yesterdays proj, Section.css */
 .Dropdown {
     position: absolute;
     top: 0;

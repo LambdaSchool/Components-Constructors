@@ -1,0 +1,15 @@
+.Section {
+  border: 1px solid black;
+}
+
+.Section__header {
+  text-align: center;
+  margin: 1%;
+}
+
+.Section__half {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

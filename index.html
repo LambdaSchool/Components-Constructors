@@ -1,7 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Introduction to the DOM</title>
+		<link rel="stylesheet" href="./styles.css">
+		<script src='./components/Dropdown/Dropdown.js' defer='defer'></script>
+		<script src='./components/Tabs/Tabs.js' defer='defer'></script>
+	</head>
+	<body>
+		<div class="Section">
+			<div class="Dropdown">
+				<button class="Dropdown__btn">Dropdown</button>
+				<div class="Dropdown__list">
+					<a href="#">Lambda</a>
+					<a href="#">Google</a>
+					<a href="#">MDN</a>
+				</div>
+			</div>
+			<h1 class="Section__header">Header</h1>
+		</div>
+		<div class="Section">
+			<div class="Section--half Section--border">
+				<div class="Box">
+					<h3 class="Box__header">Placeholder</h3>
+					<div class="Box__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.
+					</div>
+				</div>
+			</div><div class="Section--half"> <!--had to eliminate white space btwn these 2 divs since they are inline-block -->
+	<div class="Box">
+		<h3 class="Box__header">Placeholder</h3>
+		<div class="Box__text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.
+		</div>
+	</div>
+</div>
+		</div>
+		<!--TABS PROJECT -->
+		<div class="Section">
+			<div class="Tabs">
+				<div class="Tabs_links">
+					<div class="Tabs__link" data-tab="1">Tab 1</div>
+					<div class="Tabs__link" data-tab="2">Tab 2</div>
+					<div class="Tabs__link" data-tab="3">Tab 3</div>
+				</div>
+			
+				<div class="Tabs__item" data-tab="1">
+					<div class="Box">
+						<div class="Box__header">Box # 1</div>
+						<div class="Box__text">They dined on mince, and slices of quince
+							Which they ate with a runcible spoon;
+							<br>
+							And hand in hand, on the edge of the sand,
+							<br>
+							They danced by the light of the moon,
+							<br>
+							The moon,
+							<br>
+							The moon,
+							<br>
+							They danced by the light of the moon.
+							<br>
+							- Edward Lear
+						</div>
+					</div>
+				</div>
+				<div class="Tabs__item" data-tab="2">
+					<div class="Box">
+						<div class="Box__header">Box # 2</div>
+						<div class="Box__text">There was an old man of St. Bees,
+							Who was stung in the arm by a wasp,
+							<br>
+							When asked, "Does it hurt?"
+							<br>
+							He replied, "No, it doesn't,
+							<br>
+							I'm so glad it wasn't a hornet."
+							<br>
+							- W.S Gilbert
+						</div>
+					</div>
+				</div>
+				<div class="Tabs__item" data-tab="3">
+					<div class="Box">
+						<div class="Box__header">Box # 3</div>
+						<div class="Box__text">A dozen, a gross, and a score
+							Plus three times the square root of four
+							<br>
+							Divided by seven
+							<br>
+							Plus five times eleven
+							<br>
+							Is nine squared and not a bit more.
+							<br>
+							- Leigh Mercer
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+	</body>
+</html>
+
+
 
 <!-- Place the following in a section -->
 
-<div class="Tabs">
+<!-- <div class="Tabs">
 	<div class="Tabs_links">
 		<div class="Tabs__link" data-tab="1">Tab 1</div>
 		<div class="Tabs__link" data-tab="2">Tab 2</div>
@@ -60,4 +165,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->

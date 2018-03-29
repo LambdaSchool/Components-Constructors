@@ -1,0 +1,26 @@
+.Dropdown {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.Dropdown__btn {
+    border: 2px solid black;
+    height: 40px;
+}
+
+.Dropdown__list {
+    flex-direction: column;
+    display: none;
+    margin-top: 10px;
+    background: white;
+    border: 2px solid black;
+    text-align: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 65px;
+}
+
+.Dropdown--active {
+    display: flex;
+    height: 80px;
+}

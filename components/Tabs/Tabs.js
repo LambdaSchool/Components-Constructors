@@ -1,7 +1,7 @@
-
 class TabsItem {
   constructor(element) {
     // attach dom element to object. Example in Tabs class
+    this.element = element;
   }
 
   select() {
@@ -15,9 +15,9 @@ class TabsItem {
 
 class TabsLink {
   constructor(element, parent) {
-    this.element;// attach dom element to object
-    this.tabs;// attach parent to object
-    this.tabsItem;// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
+    this.element = element;// attach dom element to object
+    this.tabs = parent;// attach parent to object
+    this.tabsItem = parent.getTab;// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
     // reassign this.tabsItem to be a new instance of TabsItem, passing it this.tabsItem
     this.element.addEventListener('click', () => {
       this.tabs.updateActive(this);
@@ -64,3 +64,15 @@ class Tabs {
 
 let tabs = document.querySelectorAll(".Tabs");
 tabs = Array.from(tabs).map(tabs => new Tabs(tabs));
+
+console.log(tabs);
+
+let links = document.querySelectorAll(".Tabs__link");
+links = Array.from(links).map(links => new TabsLink(links, tabs));
+
+console.log(links);
+
+let items = document.querySelectorAll(".Tabs__item");
+items = Array.from(items).map(items => new TabsItem(items));
+
+console.log(items);

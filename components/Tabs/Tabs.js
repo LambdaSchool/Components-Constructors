@@ -33,13 +33,18 @@ class TabsLink {
 
   select() {
     // select this link
+    this.element.classList.add('Tabs__link-selected');
     // select the associated tab
-    //console.log(this.tabsItem); 
+    //console.log(this.tabsItem);
+    this.tabsItem.select();
+    
   }
 
   deselect() {
     // deselect this link
+    this.element.classList.remove('Tabs__link-selected');
     // deselect the associated tab
+    this.tabsItem.deselect();
   }
 }
 

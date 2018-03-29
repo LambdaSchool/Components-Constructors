@@ -2,23 +2,27 @@
 class TabsItem {
   constructor(element) {
     // attach dom element to object. Example in Tabs class
+    this.element = element;
   }
 
   select() {
     // should use classList
+    this.element.classList.toggle('.Tabs__item-selected');
   }
 
   deselect() {
     // should use classList
+    this.element.classList.remove('.Tabs__item-selected');
   }
 }
 
 class TabsLink {
   constructor(element, parent) {
-    this.element;// attach dom element to object
-    this.tabs;// attach parent to object
-    this.tabsItem;// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
+    this.element = element;// attach dom element to object
+    this.tabs = parent.tabs;// attach parent to object
+    this.tabsItem = new getTab(this.getTab);// assign this to the associated tab using the parent's "getTab" method by passing it the correct data
     // reassign this.tabsItem to be a new instance of TabsItem, passing it this.tabsItem
+    this.tabsItem = this.tabsItem;
     this.element.addEventListener('click', () => {
       this.tabs.updateActive(this);
       this.select();
@@ -28,11 +32,13 @@ class TabsLink {
   select() {
     // select this link
     // select the associated tab
+    this.tabsItem.classList.toggle('.Tabs__link-selected');
   }
 
   deselect() {
     // deselect this link
     // deselect the associated tab
+    this.tabsItem.classList.remove('.Tabs__link-selected');
   }
 }
 
@@ -49,6 +55,7 @@ class Tabs {
 
   init() {
     // select the first link and tab upon ititialization
+    
   }
 
   updateActive(newActive) {

@@ -4,11 +4,14 @@
 
 .Tabs__item-selected {
   display: block;
+  padding-left: 15px;
+ 
 }
 
 .Tabs__links {
   left: 0;
   margin: 20px 0;
+ 
 }
 
 .Tabs__link {
@@ -24,7 +27,9 @@
   background-color: white;
   border: solid 1px gray;
 }
-.Tabs__link-deselected{
+/* .Tabs__link-deselected{
 background-color: gray;
 border: none;
-}
+} 
+
+did not use*/

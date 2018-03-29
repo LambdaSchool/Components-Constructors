@@ -9,6 +9,7 @@
 .Tabs__links {
   left: 0;
   margin: 20px 0;
+  font-weight: bold;
 }
 
 .Tabs__link {
@@ -22,4 +23,15 @@
 .Tabs__link-selected {
   background-color: white;
   border: solid 1px gray;
+}
+
+.Tab__head {
+  text-align: center;
+
+}
+
+.Tabs {
+  border: 3px solid black;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }

@@ -1,0 +1,9 @@
+.Box__header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.Box__headTitle {
+  width: 100%;
+}

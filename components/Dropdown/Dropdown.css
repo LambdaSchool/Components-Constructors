@@ -1,0 +1,23 @@
+.Box__headDropTitle {
+    padding: 10px;
+  }
+  
+  .Box__headDropdown {
+    margin-left: 20px;
+    position: absolute;
+  }
+  
+  .Box__headDropUl {
+    display: none;
+  }
+  
+  .Box__headDropA {
+    display: block;
+    text-align: center;
+    padding: 18px;
+  }
+  
+  .Box__headDropdown--expanded {
+    position: absolute;
+    background-color: white;
+  }

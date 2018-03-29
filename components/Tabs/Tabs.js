@@ -1,11 +1,15 @@
 
+// the content of the tab element
 class TabsItem {
   constructor(element) {
-    // attach dom element to object. Example in Tabs class
+    this.element = element;
+    this.element.addEventListener('click', () => {this.TabsItemClick()})
+    this.tabs = docuemnt.querySelector('.tabs');
+    this.tabs = new Tabs(this.tabs); // attach dom element to object. Example in Tabs class
   }
 
   select() {
-    // should use classList
+    this.element.classList.toggle('tabs__link')
   }
 
   deselect() {
@@ -13,6 +17,7 @@ class TabsItem {
   }
 }
 
+// the tab that selects the tabsItem
 class TabsLink {
   constructor(element, parent) {
     this.element;// attach dom element to object
@@ -36,9 +41,10 @@ class TabsLink {
   }
 }
 
+
 class Tabs {
   constructor(element) {
-    this.element = element;// attaches the dom node to the object as "this.element"
+    this.element = element; // attaches the dom node to the object as "this.element"
     this.links = element.querySelectorAll(".Tabs__link");
     this.links = Array.from(this.links).map((link) => {
       return new TabsLink(link, this);
@@ -48,16 +54,17 @@ class Tabs {
   }
 
   init() {
-    // select the first link and tab upon ititialization
+    this.element.classList.toggle('tabs__item-selected')
+    this.tabs__link.toggleTabs('data-tab[1]');   // select the first link and tab upon ititialization
   }
 
   updateActive(newActive) {
-    // deselect the old active link
-    // assign the new active link
+    this.data-tab = toggle('tabs__item-selected');  // deselect the old active link
+    this.data-tab = toggle(this.'data-tab');   // assign the new active link
   }
 
   getTab(data) {
-    // use the tab item classname and the data attribute to select the proper tab
+   this.element.classList. // use the tab item classname and the data attribute to select the proper tab
   }
 
 }

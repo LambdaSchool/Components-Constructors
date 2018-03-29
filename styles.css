@@ -1,7 +1,19 @@
 @import './components/Tabs/Tabs.css';
 
-body {
-	box-sizing: border-box;
+.body {
+	display: flex;
+}
+
+.section {
+	border: 2px solid black;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+  	align-items: center;
+}
+
+.section__header {
 	min-width: 300px;
+	max-width: 1000px;
 	margin: 0;
 }

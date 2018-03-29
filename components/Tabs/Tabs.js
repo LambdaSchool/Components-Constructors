@@ -1,7 +1,6 @@
 
 class TabsItem {
   constructor(element) {
-    // attach dom element to object. Example in Tabs class
     this.element = element;
   }
 
@@ -10,7 +9,7 @@ class TabsItem {
   }
 
   deselect() {
-    this.select();
+    this.element.classList.toggle('Tabs__item-selected');
   }
 }
 
@@ -29,13 +28,15 @@ class TabsLink {
   select() {
     // select this link
     // select the associated tab
-    this.element.classList.toggle('Tabs__item-selected');
+    this.deselect();
+    this.tabsItem.select();
+    this.tabs.getTab(this).classList.toggle('Tabs__item-selected');
   }
 
   deselect() {
     // deselect this link
     // deselect the associated tab
-    this.select();
+    this.element.classList.toggle('Tabs__item-selected');
   }
 }
 
@@ -75,4 +76,4 @@ class Tabs {
 
 let tabs = document.querySelectorAll(".Tabs");
 tabs = Array.from(tabs).map(tabs => new Tabs(tabs));
-console.log(tabs);
+//console.log(tabs);

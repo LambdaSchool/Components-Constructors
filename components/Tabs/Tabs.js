@@ -39,6 +39,8 @@ class TabsLink {
   deselect() {
     // deselect this link
     // deselect the associated tab
+    this.element.classList.remove("Tabs__link-selected");
+    this.tabsItem.deselect();
   }
 }
 

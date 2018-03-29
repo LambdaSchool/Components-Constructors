@@ -6,13 +6,13 @@ class TabsItem {
   }
 
   select() {
-    this.element.classList.select(Tabs__item-selected); // should use classList
+    this.element.classList.add("Tabs__item-selected"); // should use classList
   }
 
   deselect() {
-    this.element.classList.deselect(Tabs__item-selected); // should use classList
+    this.element.classList.remove("Tabs__item-selected"); // should use classList
   }
-}
+} console.log('maybe')
 
 class TabsLink {
   constructor(element, parent) {
@@ -23,17 +23,18 @@ class TabsLink {
     this.element.addEventListener('click', () => {
       this.tabs.updateActive(this);
       this.select();
-    });
+      console.log('worked')
+    }); 
   };
 
   select() {
-    this.element.classList.select(Tabs__item-selected); // select this link
-    this.TabsItem.select(); // select the associated tab
+    this.element.classList.add("Tabs__link-selected"); // select this link
+    this.tabsItem.select(); // select the associated tab
   }
 
   deselect() {
-    this.element.classList.deselect(Tabs__item-selected); // deselect this link
-    this.TabsItem.deselect(); // deselect the associated tab
+    this.element.classList.remove("Tabs__link-selected"); // deselect this link
+    this.tabsItem.deselect(); // deselect the associated tab
   }
 }
 
@@ -46,6 +47,7 @@ class Tabs {
     });
     this.activeLink = this.links[0];
     this.init();
+    console.log('working')
   }
 
   init() {
@@ -54,7 +56,8 @@ class Tabs {
 
   updateActive(newActive) {
     this.activeLink.deselect(); // deselect the old active link
-    this.activeLink.select(newActive);// assign the new active link
+    this.activeLink = newActive
+    this.activeLink.select();// assign the new active link
   }
 
   getTab(data) {

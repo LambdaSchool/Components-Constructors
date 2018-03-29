@@ -1,15 +1,14 @@
-
 class TabsItem {
   constructor(element) {
     this.element = element;
   }
 
   select() {
-    this.element = element.querySelector('.Tabs__item-selected')
+    this.element.classList.add('Tabs__item-selected');
   }
 
   deselect() {
-    this.element = element.querySelector('.Tabs__item')
+    this.element.classList.remove('Tabs__item-selected');
   }
 }
 
@@ -17,8 +16,8 @@ class TabsLink {
   constructor(element, parent) {
     this.element = element;
     this.tabs = parent;
-    this.tabsItem = this.tabs.getTab();
-    this.tabsItem = new TabsItem(this.tabsItem)
+    this.tabsItem = this.tabs.getTab(this.element.dataset.tab)
+    this.tabsItem = new TabsItem(this.tabsItem);
     this.element.addEventListener('click', () => {
       this.tabs.updateActive(this);
       this.select();
@@ -26,13 +25,13 @@ class TabsLink {
   };
 
   select() {
-    this.element = document.querySelector('.Tabs__link-selected')
-    this.tabs = document.querySelector('.Tabs__link-selected')
+    this.element.classList.add('Tabs__link-selected');
+    this.tabsItem.select();
   }
 
   deselect() {
-    this.element = element.querySelector('.Tabs__item')
-    this.tabs = element.querySelector('.Tabs__item')
+    this.element.classList.remove('Tabs__link-selected');
+    this.tabsItem.deselect();
   }
 }
 
@@ -58,7 +57,12 @@ class Tabs {
   }
 
   getTab(data) {
-    // use the tab item classname and the data attribute to select the proper tab
+    this.tabs = this.element.querySelectorAll('[data-tab]');
+    for (let i = 0; i < this.tabs.length; i++) {
+      if (this.tabs[i].className === 'Tabs__item') {
+        if (this.tabs[i].dataset.tab === data) return this.tabs[i];
+      }
+    }
   }
 
 }

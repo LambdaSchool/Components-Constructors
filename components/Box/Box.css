@@ -9,7 +9,7 @@
 
 .box__dropdown__toggle {
     width: 80px;
-    position: fixed;
+    position: absolute;
     border: 2px solid black;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
 
 .box__dropdown__list {
     width: 80px;
-    position: fixed;
+    position: absolute;
     top: 50px;
     border: 2px solid black;
     display: flex;

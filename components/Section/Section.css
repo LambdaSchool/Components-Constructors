@@ -5,6 +5,7 @@
 
 .section__header {    
     display: flex;
+    justify-content: center;
 }
 
 .section__header__box {
@@ -21,6 +22,15 @@
 .section__text__box {
     border: 2px solid black;
     padding: 0 2% 1%;
+}
+
+.section__tabs {
+    border: 2px solid black;
+    border-top: none;
+    padding: 0 2% 1%;
+}
+section__headerHeadline {
+    text-align: center;
 }
 
 @media (max-width: 400px) {

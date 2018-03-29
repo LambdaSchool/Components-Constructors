@@ -5,3 +5,84 @@ body {
 	min-width: 300px;
 	margin: 0;
 }
+.section__dropdown{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 6%;
+    top: 35px;
+}
+.dropdown__button {
+    border: solid black 1px;
+    background: white;
+    height: 35px;
+}
+.dropdown__content {
+    display: none;
+}
+.dropdown__content--display {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid black 1px;
+    background: white;
+    margin-top: 10px;
+}
+.dropdown__a {
+    padding: 8px;
+}
+.box{
+    display: flex;
+    max-width: 100%;
+    border: solid black 3px;
+    flex-direction: row;
+}
+
+.box__placeholder1{
+    display: flex;
+    flex-direction: column;
+    border: solid black 1.5px;
+    width: 50%;
+    border-top: 0px;
+}
+.box__placeholder2{
+    display: flex;
+    flex-direction: column;
+    border: solid black 1.5px;
+    border-top: 0px;
+    width: 50%;
+}
+.box__h3 {
+   font-size: 1.2rem;
+   margin-left: 5%;
+   width: 100%;
+}
+.box__p {
+    margin: 0 0 25px 5%;
+}
+.section {
+    max-width: 100%;
+}
+
+.section__header1 {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+    font-size: 2rem;
+    border:solid black 3px;
+    height: 90px;
+    align-items: center;
+}
+.Tabs {
+	border: solid black 3px;
+}
+.Box__title {
+	font-weight: bolder;
+	padding-bottom: 10px;
+	font-size: 1.5rem;
+  }
+  .Box {
+	  margin: 0 15px;
+	  margin-bottom: 20px;
+  }

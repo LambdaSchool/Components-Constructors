@@ -6,9 +6,9 @@
   display: block;
 }
 
-.Tabs__links {
+.Tabs_links {
   left: 0;
-  margin: 20px 0;
+  margin: 20px 15px;
 }
 
 .Tabs__link {
@@ -22,4 +22,10 @@
 .Tabs__link-selected {
   background-color: white;
   border: solid 1px gray;
+}
+.Tabs__Menu {
+font-size: 2rem;
+text-align: center;
+padding-top: 15px;
+font-weight: bold;
 }

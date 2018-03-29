@@ -1,0 +1,31 @@
+.box__dropdown {
+    float: left;
+    align-self: center;
+}
+
+.box__title {
+    font-weight: bold;
+}
+
+.box__dropdown__toggle {
+    width: 80px;
+    position: fixed;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    margin: 10px .63%;
+}
+
+.box__dropdown__list {
+    width: 80px;
+    position: fixed;
+    top: 50px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 10px;
+    margin: 0 .63%;
+    background-color: white;
+}

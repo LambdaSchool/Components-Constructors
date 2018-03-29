@@ -57,12 +57,12 @@ class Tabs {
     });
     this.activeLink = this.links[0];
     this.init();
-    //console.log(this.element);
+    console.log(this.element);
   }
 
   init() {
-    // select the first link and tab upon ititialization
-
+    // select the first link and tab upon initialization
+    this.activeLink.select();
   }
 
   updateActive(newActive) {

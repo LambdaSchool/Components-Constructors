@@ -96,12 +96,16 @@ class TabsLink {
 
   select() {
     // select this link
+    this.element.classList.add("Tabs__link-selected");
     // select the associated tab
+    this.tabsItem.select();
   }
 
   deselect() {
     // deselect this link
+    thiis.element.classList.add("Tabs__link")
     // deselect the associated tab
+    this.tabsItem.deselect()
   }
 }
 

@@ -5,11 +5,11 @@ class TabsItem {
   }
 
   select() {
-    this.element.classList.toggle('Tabs__item-selected');
+    this.element.classList.add('Tabs__item-selected');
   }
 
   deselect() {
-    this.element.classList.toggle('Tabs__item-selected');
+    this.element.classList.remove('Tabs__item-selected');
   }
 }
 
@@ -28,14 +28,14 @@ class TabsLink {
   select() {
     // select this link
     // select the associated tab
-    this.element.classList.toggle('Tabs__item--selected');
+    this.element.classList.add('Tabs__item--selected');
     this.tabsItem.select();
   }
 
   deselect() {
     // deselect this link
     // deselect the associated tab
-    this.element.classList.toggle('Tabs__item-selected');
+    this.element.classList.remove('Tabs__item-selected');
     this.tabsItem.deselect();
   }
 }
@@ -61,7 +61,6 @@ class Tabs {
     // assign the new active link
     this.activeLink.deselect();
     this.activeLink = newActive;
-    this.init();
   }
 
   getTab(data) {

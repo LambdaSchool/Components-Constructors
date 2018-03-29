@@ -6,17 +6,18 @@ class TabsItem {
 
   select() {
     // should use classList
-    element.classList.toggle("Tabs__item-selected")
+    element.classList.add("Tabs__item-selected");
   }
 
   deselect() {
     // should use classList
+    element.classList.remove("Tabs__item");
   }
 }
 
 class TabsLink {
   constructor(element, parent) {
-    this.element; // attach dom element to object
+    this.element = element.querySelector("Tabs__link") // attach dom element to object
     this.tabs; // attach parent to object
     this.tabsItem; // assign this to the associated tab using the parent's "getTab" method by passing it the correct data
     // reassign this.tabsItem to be a new instance of TabsItem, passing it this.tabsItem

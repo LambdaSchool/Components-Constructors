@@ -5,3 +5,8 @@ body {
 	min-width: 300px;
 	margin: 0;
 }
+
+.Tabs {
+	border: 5px solid black;
+
+}

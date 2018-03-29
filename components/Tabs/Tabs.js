@@ -1,6 +1,6 @@
 //variables
-  const tabsLink = document.querySelectorAll('.Tabs__link');
-  const boxstuff = document.querySelectorAll('.Tabs__item');
+const tabsLink = document.querySelectorAll('.Tabs__link');
+const boxstuff = document.querySelectorAll('.Tabs__item');
 class TabsItem {
   constructor(element) {
     // attach dom element to object. Example in Tabs class
@@ -27,20 +27,17 @@ class TabsLink {
 
   select() {
     this.element.classList.add("Tabs_link-selected");
+    this.tabsItem.select();
   }
 
   deselect() {
     this.element.classList.remove("Tabs_link-selected");
+    this.tabsItem.deselect();
   }
 }
 
 class Tabs {
   constructor(element) {
-    this.element = element;
-    this.links = element.querySelectorAll(".Tabs__link");
-    this.links = Array.from(this.links).map((link) => {
-      return new TabsLink(link);
-    });
 
   }
 }

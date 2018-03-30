@@ -1,7 +1,68 @@
 @import './components/Tabs/Tabs.css';
+/* @import would have been needed for Box & Section if I had decided to copy/paste all my css files into separate folders */
 
 body {
 	box-sizing: border-box;
 	min-width: 300px;
 	margin: 0;
+}
+
+/* Transferred from yesterdays proj, styles.css */
+.Header {
+	text-align: center;
+	border: 2px solid black;
+	font-size: 20px;
+}
+
+.Section {
+    display: flex;
+}
+
+/* Transferred from yesterdays proj, Box.css */
+.Box {
+    padding: 20px 15px;
+    border: 3px solid black;
+}
+
+.Placeholders__Header {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.Placeholders__Text {
+    line-height: 1.5;
+}
+
+/* Transferred from yesterdays proj, Section.css */
+.Dropdown {
+    position: absolute;
+    top: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.Dropdown__Name {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.Dropdown__List {
+    margin-top: 10px;
+    padding: 10px 0 10px 10px;
+    display: none;
+    flex-direction: column;
+    width: 78px;
+    background: white;
+    border: 2px solid black;
+}
+
+.display {
+    position: absolute;
+    display: flex;
+}
+
+.roll {
+    display: flex;
 }

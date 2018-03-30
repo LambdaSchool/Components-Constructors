@@ -4,6 +4,7 @@
 		<title>Introduction to the DOM</title>
 		<link rel="stylesheet" href="./styles.css">
 		<script defer="defer" src="./index.js"></script>
+		<script defer="defer" src="./components/Tabs/Tabs.js"></script>
 	</head>
 
 	<body>
@@ -22,7 +23,7 @@
 			</div>
 		</div> <!--  header  -->
 
-		<div class="Section">
+		<div class="Section__upper">
 			<div class="Box1">
 				<div class="Box1__header">
 					<h1>Placeholder</h1>
@@ -42,14 +43,18 @@
 			</div> <!-- Box__2  -->
 		</div> <!-- Section  -->
 
-		<div class="Section">
+		<div class="Section Section__lower">			
+			<div class="tabsTitle">
+				<h1>Tabs Menu</h1>
+			</div>
+
 			<div class="Tabs">
 				<div class="Tabs__links">
 					<div class="Tabs__link" data-tab="1">Tab 1</div>
 					<div class="Tabs__link" data-tab="2">Tab 2</div>
 					<div class="Tabs__link" data-tab="3">Tab 3</div>
 				</div>
-				
+
 				<div class="Tabs__item" data-tab="1">
 					<div class="Box">
 						<div class="Box__title">Box # 1</div>

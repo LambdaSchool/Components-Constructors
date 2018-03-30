@@ -9,7 +9,7 @@
 /* list container */
 .Tabs__links {
   left: 0;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 /* items in the list*/
 .Tabs__link {
@@ -23,4 +23,20 @@
 .Tabs__link-selected {
   background-color: white;
   border: solid 1px gray;
+}
+
+/* Minor fixes with styles from here on out*/
+.Box__title {
+  font-size: 24px;
+  font-weight: bold; 
+  margin-bottom: 10px;
+}
+
+.tabsTitle {
+  text-align: center;
+  margin: 0;
+}
+
+.Tabs {
+  margin: 0 1% 1% 1%;
 }

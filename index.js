@@ -5,43 +5,31 @@ function hideChildsFunction() {
     hidenchilds.classList.remove('Dropdown__hide');
     hidenchilds.classList.add('Dropdown--show');
 }
-
-
-
-
 // ------------------section 2 -------
-
-
 let tabsLink = document.querySelectorAll('.Tabs__link');
-// let box = document.querySelector('.box');
-console.log(tabsLink);
-
-class Tabslink{
-    constructor(element,index){
+class Tabslink {
+    constructor(element, index) {
         this.index = index;
-        // this.dataNumber = element.dataset.number;
+        this.dataNumber = element.dataset.number;
         this.element = element;
-        this.element.addEventListener('click',() =>{
+        this.element.addEventListener('mousedown',() => {
             this.toggleTabsLink();
         });
-        this.TabsItem = document.querySelectorAll('.Tabs__item');
-        this.TabsItem1 = Array.from(this.TabsItem).map(params => new TabsItem(params));
-    } 
-    
-    toggleTabsLink(){
-        console.log(this.TabsItem1);
-        this.TabsItem1[this.index].TabsItem1();
-        // event.target.classList.toggle('Tabs__link--hide');
-    }    
+        this.tabsItem = document.querySelectorAll('.Tabs__item');
+        this.tabsItem1 = Array.from(this.tabsItem).map((params, index) => new TabsItem(params, index));
+    }
+    toggleTabsLink() {
+        this.tabsItem1[this.index].TabsItem1();
+    }
 }
-
-class TabsItem{
-    constructor(element){
+class TabsItem {
+    constructor(element, index) {
+        this.index = index;       
         this.element = element;
+        this.dataNumber = element.dataset.number;
     }
-    TabsItem1(){
-        this.element.classList.toggle('Tabs__item')
-       
+    TabsItem1() {   
+        this.element.classList.toggle('Tabs__item-selected');       
     }
 }
-constructedTabsLink = Array.from(tabsLink).map((param,index) => { new Tabslink(param,index) });
+let constructedTabsLink = Array.from(tabsLink).map((param, index) => new Tabslink(param, index));

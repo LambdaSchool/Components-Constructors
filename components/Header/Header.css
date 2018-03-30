@@ -1,0 +1,19 @@
+/* look for Dropdown.css for Dropdow menu CSS elements */
+
+.mainHeader {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border: 2px solid black;
+}
+
+.header {
+	margin-left: 35%;
+	
+}
+
+@media (max-width: 400px) {
+    .header {
+        margin-left: 10%;
+    }
+}

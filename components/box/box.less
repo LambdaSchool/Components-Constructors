@@ -3,12 +3,20 @@
   &--displayNone{
     &:extend(.displayNone);
   }
-  &--Header{
-    &:extend(.headerText);
+  &__Header{
+    font-size: 1.5rem;
     margin: 1rem 0;
   }
   &--noBorder-top {
     &:extend(.noBorder-top);
+  }
+  &__Heading {
+    font-size: 2rem;
+    margin: 0 0 1rem;
+  }
+  &--center-text {
+    font-size: 2.5rem;
+    &:extend(.headerText);
   }
 }
 .Header{
@@ -17,6 +25,7 @@
   border-right: 2px solid black;
   &__Text{
     &:extend(.headerText);
+    font-size: 2.5rem;
     padding: 1rem 0;
   }
 }

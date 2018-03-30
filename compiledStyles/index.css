@@ -35,9 +35,8 @@
   margin-right: 1rem;
 }
 .headerText,
-.Container--Header,
+.Container--center-text,
 .Header__Text {
-  font-size: 3rem;
   text-align: center;
 }
 .borderNone {
@@ -47,11 +46,27 @@
 .Container--noBorder-top {
   border-top: none;
 }
+.unselected {
+  background: gray;
+  color: white;
+}
+.selected {
+  background-color: white;
+  color: black;
+}
 .Container {
   border: 2px solid black;
 }
-.Container--Header {
+.Container__Header {
+  font-size: 1.5rem;
   margin: 1rem 0;
+}
+.Container__Heading {
+  font-size: 2rem;
+  margin: 0 0 1rem;
+}
+.Container--center-text {
+  font-size: 2.5rem;
 }
 .Header {
   border-top: 2px solid black;
@@ -59,6 +74,7 @@
   border-right: 2px solid black;
 }
 .Header__Text {
+  font-size: 2.5rem;
   padding: 1rem 0;
 }
 .Container__Section {

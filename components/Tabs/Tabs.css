@@ -2,7 +2,7 @@
   .Tabs__title {
     width: 100%;
     text-align: center;
-    color: red;
+    /* color: red; */
   }
 .Tabs__item {
   display: none;
@@ -34,7 +34,7 @@
 }
 .Box__description {
   width: 100%;
-  color: red;
+  /* color: red; */
 }
 
 

@@ -38,6 +38,7 @@ class TabsLink {
     // deselect this link
     // deselect the associated tab
     this.element.classList.remove('Tabs__link-selected');
+    this.tabsItem.deselect();
   }
 }
 
@@ -60,11 +61,12 @@ class Tabs {
   updateActive(newActive) {
     // deselect the old active link
     // assign the new active link
+    this.activeLink.deselect();
+    this.activeLink = newActive;
   }
 
   getTab(data) {
     // use the tab item classname and the data attribute to select the proper tab
-    console.log(this.element.querySelector(`.Tabs__item[data-tab="${data}"]`));
     return this.element.querySelector(`.Tabs__item[data-tab="${data}"]`);
   }
 }
@@ -79,7 +81,7 @@ tabs = Array.from(tabs).map(tabs => new Tabs(tabs));
 //
 //console.log(links);
 
-let items = document.querySelectorAll(".Tabs__item");
-items = Array.from(items).map(items => new TabsItem(items));
+//let items = document.querySelectorAll(".Tabs__item");
+//items = Array.from(items).map(items => new TabsItem(items));
 
 //console.log(items);

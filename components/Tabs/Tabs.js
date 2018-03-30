@@ -1,3 +1,33 @@
+// .Tabs__item {
+//   display: none;
+// }
+
+// .Tabs__item-selected {
+//   display: block;
+// }
+
+// .Tabs__links {
+//   left: 0;
+//   margin: 20px 0;
+// }
+
+// .Tabs__link {
+//   display: inline-block;
+//   box-sizing: border-box;
+//   padding: 10px 15px;
+//   margin: 10px 10px 10px 0;
+//   background-color: gray;
+// }
+
+// .Tabs__link-selected {
+//   background-color: white;
+//   border: solid 1px gray;
+// }
+
+//Tabs --> Tabs__links --> Tabs__link
+//Tabs --> Tabs__item --> Box
+// multiple of Tabs__item  --> box, Tabs__link--------------both of these have datanumbers
+//also, inside Box there is Box__title, Box__description
 
 class TabsItem {
   constructor(element) {

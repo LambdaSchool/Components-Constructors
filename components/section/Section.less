@@ -1,0 +1,14 @@
+.Container{
+  &__Section{
+    padding: 1rem;
+    &:first-child{
+      border-right: 4px solid black;
+    }
+  }
+  &--halfWidth{
+    &:extend(.widthHalf);
+  }
+  &--displayColumn{
+    &:extend(.displayRow);
+  }
+}

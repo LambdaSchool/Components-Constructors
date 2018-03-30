@@ -1,0 +1,122 @@
+.padding-1 {
+  padding: 1rem;
+}
+.centerText {
+  text-align: center;
+}
+.displayColumn {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.displayRow,
+.Container--displayColumn {
+  display: flex;
+  flex-flow: row;
+}
+.displayNone,
+.Container--displayNone {
+  display: none;
+}
+.positionRelative {
+  position: relative;
+  z-index: 1;
+}
+.positionabsolute,
+.BtnContainer--position-absolute {
+  position: absolute;
+  z-index: 2;
+}
+.widthHalf,
+.Container--halfWidth {
+  width: 50%;
+}
+.marginRight,
+.BtnContainer--marginRight {
+  margin-right: 1rem;
+}
+.headerText,
+.Container--center-text,
+.Header__Text {
+  text-align: center;
+}
+.borderNone {
+  border: none;
+}
+.noBorder-top,
+.Container--noBorder-top {
+  border-top: none;
+}
+.unselected {
+  background: gray;
+  color: white;
+}
+.selected {
+  background-color: white;
+  color: black;
+}
+.Container {
+  border: 2px solid black;
+}
+.Container__Header {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.Container__Heading {
+  font-size: 2rem;
+  margin: 0 0 1rem;
+}
+.Container--center-text {
+  font-size: 2.5rem;
+}
+.Header {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.Header__Text {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+.Container__Section {
+  padding: 1rem;
+}
+.Container__Section:first-child {
+  border-right: 4px solid black;
+}
+.BtnContainer {
+  display: inline-block;
+  margin: 1rem;
+}
+.BtnContainer__dropdownbtn {
+  border-radius: 0;
+  border: 2px solid black;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.BtnContainer__DropdownContent {
+  padding: 0.5rem;
+  border: 2px solid black;
+  margin-top: 0.2rem;
+  background: white;
+}
+.BtnContainer__listItem {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.BtnContainer__listItem:hover {
+  border-left: 3px solid black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 300px;
+}

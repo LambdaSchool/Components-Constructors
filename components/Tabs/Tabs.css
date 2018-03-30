@@ -17,6 +17,8 @@
   padding: 10px 15px;
   margin: 10px 10px 10px 0;
   background-color: orangered;
+  border: 2px solid black;
+  cursor: pointer;
 }
 
 .Tabs__link-selected {

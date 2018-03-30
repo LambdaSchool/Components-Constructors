@@ -20,14 +20,10 @@ h1 {
 .header {
 	position: relative;
 	display: flex;
-	/* flex-direction: column-reverse; */
 	justify-content: center;
 	align-items: center;
 }
-/* .content {
-	flex-direction: column;
-	max-width: 70%;
-} */
+
 .content {
 	display: flex;
 	flex-direction: row;

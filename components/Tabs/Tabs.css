@@ -11,6 +11,17 @@ h1 {
   display: none;
 }
 
+.Box__title {
+  font-weight: bold;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.Box__description {
+  padding: 10px;
+  font-size: 14px;
+}
+
 .Tabs__item-selected {
   display: block;
 }
@@ -24,7 +35,7 @@ h1 {
   display: inline-block;
   box-sizing: border-box;
   padding: 10px 15px;
-  margin: 10px 10px 10px 0;
+  margin: 10px 10px 10px 28px;
   background-color: gray;
   cursor: pointer;
 }

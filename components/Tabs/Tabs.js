@@ -1,4 +1,4 @@
-alert("works");
+//alert("works");
 
 class TabsItem {
   constructor(element) {
@@ -34,14 +34,14 @@ class TabsLink {
   select() {
     // select this link
     // select the associated tab
-    this.element.classList.add(".Tabs__link-selected");
+    this.element.classList.add("Tabs__link-selected");
     this.tabsItem.select();
   }
 
   deselect() {
     // deselect this link
     // deselect the associated tab
-    this.element.classList.remove(".Tabs__link-selected");
+    this.element.classList.remove("Tabs__link-selected");
     this.tabsItem.deselect();
   }
 }

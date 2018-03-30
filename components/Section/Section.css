@@ -1,0 +1,47 @@
+/* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    color:  black;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+	cursor: pointer;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 8px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px solid black;
+	z-index: 1;
+	border: 3px solid black;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+

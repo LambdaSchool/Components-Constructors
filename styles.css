@@ -1,7 +1,60 @@
 @import './components/Tabs/Tabs.css';
+@import './components/Box/Box.css';
+@import './components/Section/Section.css';
 
 body {
 	box-sizing: border-box;
 	min-width: 300px;
 	margin: 0;
+}
+
+body {
+	box-sizing: border-box;
+	min-width: 300px;
+	margin: 0;
+}
+
+.Header {
+	display: flex;
+	border: 2px solid black;
+}
+
+.Header h1 {
+	display: flex;
+	justify-content: center;
+	margin-left: 565px;
+}
+
+
+@media(max-width: 400px) {
+
+	body {
+		box-sizing: border-box;
+		min-width: 300px;
+		margin: 0;
+	}
+	
+	.Header {
+		display: flex;
+		border: 2px solid black;
+	}
+	
+	.Header h1 {
+		display: flex;
+		justify-content: center;
+		margin-left: 45px;
+	}
+
+	.box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.box .Box1 {
+		padding: 14px;
+	}
+
+	.box .Box2 {
+		padding: 14px;
+	}
 }

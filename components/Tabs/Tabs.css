@@ -1,9 +1,11 @@
 .Tabs__item {
   display: none;
+  /* border: 2px solid purple; */
 }
 
 .Tabs__item-selected {
   display: block;
+  /* border: 2px solid red; */
 }
 
 .Tabs__links {
@@ -27,5 +29,11 @@
 }
 
 .Box__title {
-   
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.Box{
+  padding: 0 10px 10px;
 }

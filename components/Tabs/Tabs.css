@@ -1,14 +1,28 @@
+.Tabs{
+  border: 2px solid black;
+  max-width: 800px;
+  
+  
+}
+.Tabs__h1{
+  display:flex;
+ justify-content: center;
+}
 .Tabs__item {
   display: none;
 }
 
 .Tabs__item-selected {
   display: block;
+  padding-left: 15px;
+  padding-bottom:15px;
+ 
 }
 
 .Tabs__links {
   left: 0;
   margin: 20px 0;
+ 
 }
 
 .Tabs__link {
@@ -17,9 +31,16 @@
   padding: 10px 15px;
   margin: 10px 10px 10px 0;
   background-color: gray;
+  border: none;
 }
 
 .Tabs__link-selected {
   background-color: white;
   border: solid 1px gray;
 }
+/* .Tabs__link-deselected{
+background-color: gray;
+border: none;
+} 
+
+did not use*/

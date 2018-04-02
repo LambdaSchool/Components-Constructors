@@ -1,7 +1,46 @@
+@import './components/Header/Header.css';
+@import './components/Dropdown/Dropdown.css';
 @import './components/Tabs/Tabs.css';
+
 
 body {
 	box-sizing: border-box;
 	min-width: 300px;
 	margin: 0;
+}
+
+section {
+	border: 2px solid black;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+}
+
+.content__block {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.Tabs {
+	position: relative;
+}
+
+.Tabs__header {
+	text-align: center;
+	margin: 0;
+	/* border: 2px solid blue; */
+
 }

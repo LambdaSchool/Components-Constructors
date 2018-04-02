@@ -1,7 +1,43 @@
-
+<!DOCTYPE html>
+<hml>
+	<head>
+		<title>Introduction to the DOM</title>
+		<link rel="stylesheet" href="./styles.css">
+		<script defer="defer" src="components/Dropdown/dropdown.js"></script>
+		<script type="text/javascript" defer="defer" src="components/Tabs/tabs.js"></script>
+	</head>
+	<body>
+		<div class="section">
+		<div class="header">
+			<div class="header__dropdown header_dropdown--hover">
+      				<div class="dropdown__title">Dropdown</div>
+      					<div class="dropdown__list">
+							<a href="#" >Lambda</a>
+							<a href="#" >Google</a>
+							<a href="#" >MDN</a>
+      				</div>
+			</div>
+				<h3 class="header__headline">Header</h3>
+		</div>
+	</div>
+	<div class="section">
+			<div class="Boxes">
+				<div class="Box">
+					<h3 class="Box__title">Placeholder</h3>
+					<p class="Box__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.
+					</p>
+				</div>
+				<div class="Box">
+					<h3 class="Box__title">Placeholder</h3>
+					<p class="Box__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.
+					</p>
+				</div>
+			</div>
+		</div>
 <!-- Place the following in a section -->
-
+<div class="section">
 <div class="Tabs">
+	<h3 class="Tabs__headline Tabs__headline--textCenter">Tabs Menu</h3>
 	<div class="Tabs_links">
 		<div class="Tabs__link" data-tab="1">Tab 1</div>
 		<div class="Tabs__link" data-tab="2">Tab 2</div>
@@ -10,7 +46,7 @@
 
 	<div class="Tabs__item" data-tab="1">
 		<div class="Box">
-			<div class="Box__title">Box # 1</div>
+			<div class="Box__title Box__title--bold">Box # 1</div>
 			<div class="Box__description">They dined on mince, and slices of quince
 				Which they ate with a runcible spoon;
 				<br>
@@ -30,7 +66,7 @@
 	</div>
 	<div class="Tabs__item" data-tab="2">
 		<div class="Box">
-			<div class="Box__title">Box # 2</div>
+			<div class="Box__title Box__title--bold">Box # 2</div>
 			<div class="Box__description">There was an old man of St. Bees,
 				Who was stung in the arm by a wasp,
 				<br>
@@ -46,7 +82,7 @@
 	</div>
 	<div class="Tabs__item" data-tab="3">
 		<div class="Box">
-			<div class="Box__title">Box # 3</div>
+			<div class="Box__title Box__title--bold">Box # 3</div>
 			<div class="Box__description">A dozen, a gross, and a score
 				Plus three times the square root of four
 				<br>
@@ -61,3 +97,6 @@
 		</div>
 	</div>
 </div>
+</div>
+</body>
+</hml>

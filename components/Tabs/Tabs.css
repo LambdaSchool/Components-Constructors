@@ -15,11 +15,19 @@
   display: inline-block;
   box-sizing: border-box;
   padding: 10px 15px;
-  margin: 10px 10px 10px 0;
+  margin: 10px 10px 10px 5px;
   background-color: gray;
 }
 
 .Tabs__link-selected {
   background-color: white;
   border: solid 1px gray;
+}
+
+.Tabs__headline {
+  font-size: 1.5rem;
+}
+
+.Tabs__headline--textCenter {
+  text-align: center;
 }

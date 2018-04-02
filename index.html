@@ -1,4 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Introduction to the DOM</title>
+		<link rel="stylesheet" href="./styles.css">
+	</head>
+	<body>
+		<script defer="defer" src="./components/Dropdown/Dropdown.js"></script>
+		<script defer="defer" src="./components/Tabs/Tabs.js"></script>
+		
+		<div class="Section Section--bordered Section--full">
+			<div class="Dropdown">
+				<div class="Dropdown__button">Dropdown</div>
+				<div class="Dropdown__content">
+					<a class="Dropdown__link" href="https://lambdaschool.com/">Lambda</a>
+					<a class="Dropdown__link" href="https://www.google.com/">Google</a>
+					<a class="Dropdown__link" href="https://developer.mozilla.org/en-US/">MDN</a>
+				</div>
+			</div>
+			<div class="Section__header">Header</div>
+		</div>
 
+		<div class="Section Section--bordered Section--half">
+				<div class="Box">
+					<div class="Box__title">Placeholder</div>
+					<div class="Box__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.</div>
+				</div>
+		</div><div class="Section Section--bordered Section--half"
+				<div class="Box">
+					<div class="Box__title">Placeholder</div>
+					<div class="Box__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus nibh, gravida nec felis quis, facilisis facilisis lectus. Nulla ac orci pretium, condimentum orci quis, accumsan nisi. Aliquam erat volutpat. Curabitur cursus mattis libero, at viverra risus hendrerit quis. Fusce imperdiet tristique tortor non tincidunt. Mauris accumsan urna nec augue feugiat porta. Proin vitae magna in ex malesuada laoreet eget a nulla. Aliquam tristique et elit at consequat. In hac habitasse platea dictumst.</div>
+				</div>
+			</div>
+		</div>
 <!-- Place the following in a section -->
 
 <div class="Tabs">
@@ -6,7 +39,7 @@
 		<div class="Tabs__link" data-tab="1">Tab 1</div>
 		<div class="Tabs__link" data-tab="2">Tab 2</div>
 		<div class="Tabs__link" data-tab="3">Tab 3</div>
-	</div>
+	</div> <!-- tabs_links -->
 
 	<div class="Tabs__item" data-tab="1">
 		<div class="Box">
@@ -25,9 +58,9 @@
 				They danced by the light of the moon.
 				<br>
 				- Edward Lear
-			</div>
-		</div>
-	</div>
+			</div> <!-- box description -->
+		</div> <!-- box -->
+	</div> <!-- tabs__item -->
 	<div class="Tabs__item" data-tab="2">
 		<div class="Box">
 			<div class="Box__title">Box # 2</div>
@@ -41,9 +74,9 @@
 				I'm so glad it wasn't a hornet."
 				<br>
 				- W.S Gilbert
-			</div>
-		</div>
-	</div>
+			</div> <!-- box description -->
+		</div> <!-- box -->
+	</div> <!-- tabs__item -->
 	<div class="Tabs__item" data-tab="3">
 		<div class="Box">
 			<div class="Box__title">Box # 3</div>
@@ -57,7 +90,9 @@
 				Is nine squared and not a bit more.
 				<br>
 				- Leigh Mercer
-			</div>
-		</div>
-	</div>
-</div>
+			</div> <!-- box description -->
+		</div> <!-- box -->
+	</div> <!-- tabs__item -->
+</div> <!-- tabs -->
+</body>
+</html>
